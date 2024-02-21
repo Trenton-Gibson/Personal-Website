@@ -34,24 +34,27 @@ button{
     position: fixed;
     width:100%;
     z-index:2;
-    height:10em;
+    height:4em;
     display:grid;
     grid-gap:2em;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    .top-navbar-links-container{
+        padding: 1.5em 0;
+        grid-column:auto/span 2;
+        margin-left: 25em;
+    }
     .top-navbar-links{
-        margin:auto;
         font-family:monospace;
         color: #8001FE;
         font-size:1.5em;
         padding:2.2em;
-        grid-column:auto/span 2;
     }
     .top-navbar-home-link{
-        margin-top:auto;
-        margin-bottom: auto;
+        margin: .5em 0;
+        margin-bottom:1.5em;
         font-family:monospace;
         color:white;
-        font-size:1.85em;
+        font-size:1.6em;
         margin-left:1.75em;
     }
 }
@@ -64,14 +67,14 @@ button{
     display: grid;
     position: relative;
     background-color: #8001FE;
-    height: 50em;
+    height: 44em;
     grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
     /*grid-template-columns: repeat(12,1fr);*/
 
     /*Styles for text next to my headshot*/
 
     .self-description-headers {
-        padding-top: 14em;
+        padding-top: 6em;
         grid-row: 1;
         z-index: 1;
 
@@ -87,12 +90,20 @@ button{
             }
 
             #descriptor-analyst {
-                width: 4.25em;
+                padding-left:.5em;
+                margin-left:0;
+                margin-right:3em;
+                border-radius:2em;
+                text-align:left;
             }
 
             #descriptor-designer {
                 width: 4.75em;
                 float: right;
+                border-radius:2em;
+                padding-left:.25em;
+                padding-right:.25em;
+                margin-right:0;
             }
 
             #descriptor-programmer {
@@ -100,6 +111,11 @@ button{
                 background-color: white;
                 width: 5.75em;
                 margin: auto;
+                border-radius:2em;
+                padding-left:.25em;
+                padding-right:.25em;
+                margin-top:.4em;
+                margin-bottom:.25em;
             }
         }
     }
@@ -119,7 +135,7 @@ button{
         }
     /*Styles for headshot*/
     .headshot-below-headers{
-        padding-top:10em;
+        padding-top:4em;
         grid-row: 1;
         background-color:#8001FE;
         height:40em;
@@ -133,17 +149,24 @@ button{
 /*Styles for the container containing my portfolio*/
 .myPortfolio{
     background-color:white;
+    padding:9em 0em;
     display: grid;
     position: relative;
     grid-gap:2em;
     grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
     #heading-my-portfolio{
         grid-row:1;
-        color: #8001FE;;
-        padding-top:1em;
+        color: white;
+        padding-top:.1em;
+        padding-bottom:.1em;
         text-align: center;
-        font-size:6em;
+        font-size:8em;
         grid-column:auto/span 3;
+        background-color:#8001FE;
+        border-radius:2em;
+        margin:1em;
+        margin-bottom:0;
+        margin-top:0em;
     }
     /*Styles related to the Personal Finance Manager container.*/
     .personalFinanceManager{
@@ -207,6 +230,7 @@ button{
     top: 0;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+
     .pop-up-finance-content {
         width: 60%;
         height: auto;
@@ -376,6 +400,95 @@ button{
     }
 }
 
+
+
+/*Styles for the About container*/
+.about{
+    background-color:#8001FE;
+    display: grid;
+    position: relative;
+    grid-gap:2em;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    #heading-about{
+        font-size:5em;
+        color:#8001FE;
+        text-align:center;
+        margin-top:.5em;
+        margin-right:.75em;
+        padding:.3em;
+        background-color:white;
+        border-radius:2em;
+    }
+    .about-container-text{
+        padding:5em 0em;
+    }
+    #about-text{
+        color:white;
+        padding-top:1.5em;
+    }
+    .about-container-image-circuts{
+        height:40em;
+        #about-image-circuts{
+            height:100%;
+            width:100%;
+            object-fit:fill;
+        }
+    }
+}
+
+/*Styles for Contact container*/
+.contact{
+    width:60%;
+    padding: 5em 2em;
+    margin-right:auto;
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    .contact-form{
+        align-items:center;
+        justify-content:center;
+        background:#8001FE;
+        border-radius:2em;
+        display: flex;
+        flex-direction:column;
+        width:80%;
+        padding: 0 0;
+        #heading-contact{
+            font-size:5.5em;
+            padding:.5em;
+            color:white;
+        }
+        input.contact-form, textarea.contact-form{
+            margin:.75em 0 ;
+            padding: .5em;
+            background:white;
+            font-family:monospace;
+            font-size:1em;
+        }
+        #contact-button{
+            margin:2em 0;
+            padding:1.2em;
+            background:black;
+            color:white;
+            border-radius:2em;
+            font-family:monospace;
+        }
+        #name{
+
+        }
+        #email{
+
+        }
+        #phone{
+
+        }
+        #message{
+
+        }
+    }
+}
+
 /*Styles for the bottom navbar*/
 #bottomNavBar{
     overflow:hidden;
@@ -384,14 +497,6 @@ button{
     top:0;
     z-index:500;
     #my-links{
-    color:white;
+        color:white;
     }
-}
-
-/*Styles for the About container*/
-.about{
-}
-
-/*Styles for Contact container*/
-.contact{
 }

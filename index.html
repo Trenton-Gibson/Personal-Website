@@ -14,12 +14,12 @@
         <div class="top-navbar-home-link">
             <a href="#" class="top-navbar-home-link">Trenton Gibson</a>
         </div>
-        <div class="top-navbar-links">
-            <a href="#heading-my-portfolio" class="top-navbar-links" id="my-portfolio-link">
+        <div class="top-navbar-links-container">
+            <a href="#myPortfolio" class="top-navbar-links" id="my-portfolio-link">
                 My Portfolio</a>
-            <a href="#heading-about" class="top-navbar-links" id="about-link">
+            <a href="#about" class="top-navbar-links" id="about-link">
                 About</a>
-            <a href="#heading-contact" class="top-navbar-links" id="contact-link">
+            <a href="#contact" class="top-navbar-links" id="contact-link">
                 Contact</a>
         </div>
     </nav>
@@ -42,7 +42,7 @@
     </div>
 
     <!--Elements for the Personal Finance Manager Popup-->
-    <div class="pop-up-personal-finance-manager">
+    <div class="pop-up-personal-finance-manager" id="pop-up-personal-finance-manager">
         <div class="pop-up-finance-content">
             <div class="pop-up-finance-close-button-container">
                 <button id="pop-up-finance-close-button">
@@ -60,7 +60,7 @@
     </div>
 
     <!--Elements for the Personal Website Popup-->
-    <div class="pop-up-personal-website">
+    <div class="pop-up-personal-website" id="pop-up-personal-website">
         <div class="pop-up-personal-website-content">
             <div class="pop-up-carbones-close-button-container">
                 <button id="pop-up-personal-website-close-button">
@@ -77,7 +77,7 @@
     </div>
 
     <!--Elements for the Carbone's Pizzeria Website Popup-->
-    <div class="pop-up-carbones-website">
+    <div class="pop-up-carbones-website" id="pop-up-carbones-website">
         <div class="pop-up-carbones-website-content">
             <div class="pop-up-finance-close-button-container">
                 <button id="pop-up-carbones-website-close-button">
@@ -97,7 +97,7 @@
     </div>
 
     <!--Elements for the Portfolio Container-->
-    <div class="myPortfolio">
+    <div class="myPortfolio" id="myPortfolio">
     <h2 id="heading-my-portfolio">My Portfolio</h2>
         <div class="personalFinanceManager">
             <button id="finance-button" class="personalFinanceManager">
@@ -117,15 +117,33 @@
     </div>
 
     <!--Elements for the About Section-->
-    <div class="about">
-    <h2 id="heading-about">About</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias atque autem, consectetur dolor esse excepturi exercitationem harum ipsum laboriosam magni necessitatibus obcaecati odio praesentium temporibus, totam unde, velit veniam.</p>
+    <div class="about" id="about">
+        <div class="about-container-image-circuts">
+            <img id="about-image-circuts" src="PurpleCircutrybyMichaelDziedzic.png" alt="Computer circutry in a red light.">
+        </div>
+        <div class="about-container-text">
+            <h2 id="heading-about">About</h2>
+            <p id="about-text">I'm a senior computer science major studying at the University of Northwestern St. Paul.
+                My education has given me practical experience in application development and in systems analysis and design.
+                In addition to knowing the web-based languages and Python, I have experience with Java, SQL, and Linux Terminal.
+                I'm particularly fascinated by the creative potential of programming and how you can build your own worlds just by typing out code.
+                </p>
+        </div>
     </div>
 
     <!--Elements for the Contact Section-->
-    <div class="contact">
-        <h2 id="heading-contact">Contact</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias atque autem, consectetur dolor esse excepturi exercitationem harum ipsum laboriosam magni necessitatibus obcaecati odio praesentium temporibus, totam unde, velit veniam.</p>
+    <div class="contact" id="contact">
+        <div class="contact-form">
+            <form class="contact-form" id="contact-form-id" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f84b5316-28b6-4649-8257-858175074963">
+                <h2 id="heading-contact">Contact</h2>
+                <input class="contact-form" type="text" name="name" id="name" placeholder="Enter your full name" required>
+                <input class="contact-form" type="email" name="email" id="email" placeholder="Enter your email address" required>
+                <input class="contact-form" type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
+                <textarea class="contact-form" name="message" id="message" rows="10" placeholder="Tell me about your situation..."></textarea>
+                <button id="contact-button" type="submit">Send Contact Info</button>
+            </form>
+        </div>
     </div>
 
     <!--Elements for the Bottom Navbar-->
