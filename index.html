@@ -15,11 +15,11 @@
             <a href="#" class="top-navbar-home-link">Trenton Gibson</a>
         </div>
         <div class="top-navbar-links-container">
-            <a href="#myPortfolio" class="top-navbar-links" id="my-portfolio-link">
+            <a href="#myPortfolio" class="top-navbar-links-container" id="my-portfolio-link">
                 My Portfolio</a>
-            <a href="#about" class="top-navbar-links" id="about-link">
+            <a href="#about" class="top-navbar-links-container" id="about-link">
                 About</a>
-            <a href="#contact" class="top-navbar-links" id="contact-link">
+            <a href="#contact" class="top-navbar-links-container" id="contact-link">
                 Contact</a>
         </div>
     </nav>
@@ -45,9 +45,7 @@
     <div class="pop-up-personal-finance-manager" id="pop-up-personal-finance-manager">
         <div class="pop-up-finance-content">
             <div class="pop-up-finance-close-button-container">
-                <button id="pop-up-finance-close-button">
-                    <p class="exit-button-text">X</p>
-                </button>
+                <button id="pop-up-finance-close-button">X</button>
             </div>
             <h3 id="heading-personal-finance-manager">Personal Finance Manager</h3>
             <img id="image-personal-finance-manager" src="finance-manager.png" alt="Picture of financial management software">
@@ -55,34 +53,30 @@
                 It allows for the user to record transactions,  review the information of various accounts, and view the transaction history of those accounts.
                 Using this tool has saved me many hours from having to record financial information on paper.
                 To view the code for this project click on the link that says "My Coding Projects".</p>
-            <a class="link-my-projects" href="https://github.com/Trenton-Gibson?tab=repositories">My Coding Projects</a>
+            <a class="pop-up-finance-content" href="https://github.com/Trenton-Gibson?tab=repositories">My Coding Projects</a>
         </div>
     </div>
 
     <!--Elements for the Personal Website Popup-->
     <div class="pop-up-personal-website" id="pop-up-personal-website">
         <div class="pop-up-personal-website-content">
-            <div class="pop-up-carbones-close-button-container">
-                <button id="pop-up-personal-website-close-button">
-                    <p class="exit-button-text">X</p>
-                </button>
+            <div class="pop-up-personal-website-close-button-container">
+                    <button id="pop-up-personal-website-close-button">X</button>
             </div>
             <h3 id="heading-personal-website">Personal Website</h3>
             <img id="image-personal-website" src="personal-website.png" alt="Picture of Trenton Gibson's Website.">
             <p id="text-personal-website">I created the website you are currently viewing in a month-a-half whilst having no prior experience in HTML, JavaScript, or CSS.
                 I plan to add a blog onto my website which will act as a devlog for a video game I'm currently creating with several other computer science students.
                 To view the code for this project click on the link that says "My Coding Projects".</p>
-            <a class="link-my-projects" href="https://github.com/Trenton-Gibson?tab=repositories">My Coding Projects</a>
+            <a class="pop-up-personal-website-content" href="https://github.com/Trenton-Gibson?tab=repositories">My Coding Projects</a>
         </div>
     </div>
 
     <!--Elements for the Carbone's Pizzeria Website Popup-->
     <div class="pop-up-carbones-website" id="pop-up-carbones-website">
         <div class="pop-up-carbones-website-content">
-            <div class="pop-up-finance-close-button-container">
-                <button id="pop-up-carbones-website-close-button">
-                    <p class="exit-button-text">X</p>
-                </button>
+            <div class="pop-up-carbones-close-button-container">
+                <button id="pop-up-carbones-website-close-button">X</button>
             </div>
             <h3 class="carbonesMarketingSystem">Carbone's Pizzeria Marketing System</h3>
             <img id="image-carbones-website" src="Carbone'sDoorPhoto.jpg" alt="Picture of Trenton Gibson's Website.">
@@ -92,7 +86,7 @@
                 With this information, Carbone's locations could send marketing material in the mail to those newly sold homes.
                 This would create a specific target for marketing allowing for better use of marketing dollars.
                 To view the code for this project click on the link that says "My Coding Projects".</p>
-            <a class="link-my-projects" href="https://github.com/Trenton-Gibson?tab=repositories">My Coding Projects</a>
+            <a class="pop-up-carbones-website-content" href="https://github.com/Trenton-Gibson?tab=repositories">My Coding Projects</a>
         </div>
     </div>
 
@@ -100,19 +94,16 @@
     <div class="myPortfolio" id="myPortfolio">
     <h2 id="heading-my-portfolio">My Portfolio</h2>
         <div class="personalFinanceManager">
-            <button id="finance-button" class="personalFinanceManager">
-                <img class="personalFinanceManager" src="dollar-sign.png" alt="Picture of a cartoon dollar sign">
-            </button>
+            <img class="personalFinanceManager" id="img-personal-finance-manager"  src="dollar-sign.png" alt="Picture of a cartoon dollar sign">
+            <div class="financeHoverEffect "></div>
         </div>
         <div class="personalWebsite">
-            <button id="personal-website-button" class="personalWebsite">
-                <img class="personalWebsite" src="cartoon-man.png" alt="Picture of a cartoon man">
-            </button>
+            <img id="img-personal-website" class="personalWebsite" src="cartoon-man.png" alt="Picture of a cartoon man">
+            <div class="personalWebsiteHoverEffect "></div>
         </div>
         <div class="carbonesMarketingSystem">
-                <button id="carbones-website-button" class="carbonesMarketingSystem">
-                    <img class="carbonesMarketingSystem" src="CarbonesTransparent.png" alt="Picture of Carbone's Pizzeria logo">
-                </button>
+            <img id="img-carbones-logo" class="carbonesMarketingSystem" src="CarbonesTransparent.png" alt="Picture of Carbone's Pizzeria logo">
+            <div class="carbonesHoverEffect "></div>
         </div>
     </div>
 
@@ -148,7 +139,34 @@
 
     <!--Elements for the Bottom Navbar-->
     <nav id="bottomNavBar">
-          <p id="my-links">My Links</p>
+        <div class="my-links-container">
+          <h3 class="my-links-container" id="my-links-heading">Page Links</h3>
+            <a href="#" class="my-links-container" id="bot-nav-bar-home-link">
+                Back to Top</a>
+            <a href="#myPortfolio" class="my-links-container" id="bot-nav-bar-my-portfolio-link">
+                My Portfolio</a>
+            <a href="#about" class="my-links-container" id="bot-nav-bar-about-link">
+                About</a>
+            <a href="#contact" class="my-links-container" id="bot-nav-bar-contact-link">
+                Contact</a>
+        </div>
+        <div class="on-the-web-container">
+            <h3 class="on-the-web-container" id="on-the-web-heading">On The Web</h3>
+            <a href="https://www.linkedin.com/in/trenton-gibson/" class="on-the-web-container"
+                id="linked-in-link">
+                <img id="normal-linkedin-logo" src="TransparentLinkedinBttnDesign.png" alt="Linkedin Logo">
+                <img id="purple-linkedin-logo" src="PurpleLinkedinBttnDesign.png" alt="Purple Linkedin Logo">
+            </a>
+            <a href="https://github.com/Trenton-Gibson?tab=repositories" class="on-the-web-container"
+               id="github-link">
+                <img id="normal-github-logo" src="TransparentGithubBttnDesign.png" alt="Github Logo">
+                <img id="purple-github-logo" src="SmallPurpleGithubBttnDesign.png" alt="Purple Github Logo">
+            </a>
+        </div>
+        <div class="logo-container">
+            <img id="my-logo" class="logo-container" src="TitleIconWithPurpleBackground.png"
+                 alt="Binary numbers with a purple background">
+        </div>
     </nav>
 </body>
 <script src="buttonFunctionality.js"></script>

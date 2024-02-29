@@ -38,17 +38,26 @@ button{
     display:grid;
     grid-gap:2em;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    background:linear-gradient( black, #350E56);
+
     .top-navbar-links-container{
         padding: 1.5em 0;
         grid-column:auto/span 2;
         margin-left: 25em;
-    }
-    .top-navbar-links{
+
+        a.top-navbar-links-container{
         font-family:monospace;
         color: #8001FE;
         font-size:1.5em;
         padding:2.2em;
+        margin: 0;
+        }
+        a.top-navbar-links-container:hover{
+            transition: 0.5s ease;
+            color:white;
+        }
     }
+
     .top-navbar-home-link{
         margin: .5em 0;
         margin-bottom:1.5em;
@@ -56,6 +65,10 @@ button{
         color:white;
         font-size:1.6em;
         margin-left:1.75em;
+        a.top-navbar-home-link:hover{
+            transition: 0.5s ease;
+            color:#8001FE;
+        }
     }
 }
 
@@ -170,51 +183,87 @@ button{
     }
     /*Styles related to the Personal Finance Manager container.*/
     .personalFinanceManager{
-        grid-row:2;
-        h3.personalFinanceManager{
-            text-align: center;
-        }
-        img.personalFinanceManager{
+        position:relative;
+        display: grid;
+        grid-row: 2;
+        align-content: center;
+        justify-content: center;
+         #img-personal-finance-manager{
             border-radius: 5em;
-            width:29em;
+            width:27em;
+            border: solid;
+            border-color: black;
         }
-        button.personalFinanceManager{
-            border-radius: 5em;
-            left:15%;
-            background-color:#E3F9C1;
+        .financeHoverEffect{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background-color: rgba(0,0,0,.4);
+            opacity:0;
+            transition: 0.5s ease;
+            width:27.2em;
+            justify-self:center;
+            border-radius:5em;
         }
     }
+    .personalFinanceManager:hover .financeHoverEffect{
+         opacity:1;
+     }
     .personalWebsite{
-        grid-row:2;
-        h3.personalWebsite{
-            text-align: center;
-        }
+        display: grid;
+        grid-row: 2;
+        align-content: center;
+        justify-content: center;
         img.personalWebsite{
             border-radius:5em;
-            width:29em;
+            width:27em;
+            border: solid;
+            border-color: black;
         }
-        button.personalWebsite{
+        .personalWebsiteHoverEffect{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background-color: rgba(0,0,0,.4);
+            opacity:0;
+            transition: 0.5s ease;
+            width:27.2em;
+            height:27.4em;
+            justify-self:center;
             border-radius:5em;
-            left:10%;
-            background-color:#1ABC9C;
         }
     }
+    .personalWebsite:hover .personalWebsiteHoverEffect{
+        opacity:1;
+    }
     .carbonesMarketingSystem{
-        grid-row:2;
-        h3.carbonesMarketingSystem{
-            text-align: center;
-            }
+        display: grid;
+        grid-row: 2;
+        align-content: center;
+        justify-content: center;
         img.carbonesMarketingSystem{
             border-radius:5em;
-            height:29em;
-            width:29em;
+            height:27em;
+            width:27em;
             object-fit: scale-down;
-        }
-        button.carbonesMarketingSystem{
-            border-radius:5em;
-            left:5%;
-            background-color:white;
+            border: solid;
+            border-color: black;
             }
+        .carbonesHoverEffect{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background-color: rgba(0,0,0,.4);
+            opacity:0;
+            transition: 0.5s ease;
+            width:27.2em;
+            height:27.2em;
+            justify-self:center;
+            border-radius:5em;
+        }
+        }
+    .carbonesMarketingSystem:hover .carbonesHoverEffect{
+        opacity:1;
         }
     }
 
@@ -241,21 +290,15 @@ button{
         border-radius: 1.5em;
         border-color: #8001FE;
 
-        .pop-up-finance-close-button-container{
-            width:100%;
-            height:3em;
-        }
         #pop-up-finance-close-button{
             float:right;
-            padding-left:.5em;
-            padding-right:.5em;
-            margin:1.25em;
+            margin:.3em .7em;
             background:rgba(0,0,0,0);
             border-radius:.3em;
             border-color:lightslategrey;
-            .exit-button-text{
-                text-font:5em;
-            }
+            color:#8001FE;
+            font-family:monospace;
+            font-size:1.8em;
         }
         #image-personal-finance-manager{
             display:block;
@@ -266,12 +309,21 @@ button{
         #text-personal-finance-manager{
             padding:2em;
         }
-        .link-my-projects{
+        a.pop-up-finance-content{
             font-family: monospace;
             font-size:1.75em;
             padding:.5em;
             margin-left:.75em;
+            color:black;
+            margin-bottom:.2em;
+            border:0;
+            background:none;
         }
+        a.pop-up-finance-content:hover{
+            transition: 0.5s ease;
+             color:#8001FE;
+             text-decoration-color:#8001FE;
+         }
         #heading-personal-finance-manager{
             text-align:center;
             font-size:4em;
@@ -312,21 +364,28 @@ button{
         }
         #pop-up-personal-website-close-button{
             float:right;
-            padding-left:.5em;
-            padding-right:.5em;
-            margin:1.25em;
+            margin:.3em .7em;
             background:rgba(0,0,0,0);
             border-radius:.3em;
             border-color:lightslategrey;
-            .exit-button-text{
-                text-font:5em;
-            }
+            color:#8001FE;
+            font-family:monospace;
+            font-size:1.8em;
         }
-        .link-my-projects{
+        a.pop-up-personal-website-content{
             font-family: monospace;
             font-size:1.75em;
             padding:.5em;
             margin-left:.75em;
+            color:black;
+            margin-bottom:.2em;
+            border:0;
+            background:none;
+        }
+        a.pop-up-personal-website-content:hover{
+            transition: 0.5s ease;
+            color:#8001FE;
+            text-decoration-color:#8001FE;
         }
         #text-personal-website{
             padding:2em;
@@ -355,21 +414,15 @@ button{
         border: .5em solid;
         border-radius: 1.5em;
         border-color: #8001FE;
-        .pop-up-carbones-website-close-button-container{
-            width:100%;
-            height:3em;
-        }
         #pop-up-carbones-website-close-button{
             float:right;
-            padding-left:.5em;
-            padding-right:.5em;
-            margin:1.25em;
+            margin:.3em .7em;
             background:rgba(0,0,0,0);
             border-radius:.3em;
             border-color:lightslategrey;
-            .exit-button-text{
-                text-font:5em;
-            }
+            color:#8001FE;
+            font-family:monospace;
+            font-size:1.8em;
         }
         #image-carbones-website{
             display:block;
@@ -389,13 +442,22 @@ button{
         h3.carbonesMarketingSystem{
             text-align:center;
             font-size:4em;
-            padding:.5em;
+            padding:0em .5em;
         }
-        .link-my-projects{
+        a.pop-up-carbones-website-content{
             font-family: monospace;
             font-size:1.75em;
             padding:.5em;
             margin-left:.75em;
+            color:black;
+            margin-bottom:.2em;
+            border:0;
+            background:none;
+        }
+        a.pop-up-carbones-website-content:hover{
+            transition: 0.5s ease;
+            color:#8001FE;
+            text-decoration-color:#8001FE;
         }
     }
 }
@@ -466,6 +528,9 @@ button{
             font-family:monospace;
             font-size:1em;
         }
+        textarea.contact-form{
+            resize: vertical;
+        }
         #contact-button{
             margin:2em 0;
             padding:1.2em;
@@ -492,11 +557,113 @@ button{
 /*Styles for the bottom navbar*/
 #bottomNavBar{
     overflow:hidden;
-    background-color:black;
     width:100%;
     top:0;
     z-index:500;
-    #my-links{
+    display: grid;
+    position: relative;
+    grid-gap:2em;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    padding:3em 0em;
+    background:linear-gradient(black, #350E56);
+    .my-links-container{
+        display: inline-grid;
+        margin-right:auto;
+        margin-left:auto;
+        display:grid;
+        align-items:center;
+        justify-content:center;
+        text-decoration-color:white;
+        font-family:monospace;
         color:white;
+        a.my-links-container{
+            font-size:2em;
+        }
+        a.my-links-container:hover{
+            transition: 0.5s ease;
+            color:#8001FE;
+            text-decoration-color:#8001FE;
+        }
+        #my-links-heading{
+            color:#8001FE;
+            font-size:4em;
+            margin: 0 0;
+            margin-bottom:.5em;
+            grid-row:1;
+        }
+        #bot-navbar-home-link{
+            grid-row:2;
+        }
+        #bot-navbar-my-portfolio-link{
+            grid-row:3;
+        }
+        #bot-navbar-about-link{
+            grid-row:4;
+        }
+        #bot-navbar-contact-link{
+            grid-row:5;
+        }
+    }
+
+
+    .on-the-web-container{
+        display: inline-grid;
+        display:grid;
+        text-decoration-color:#8001FE;
+        font-family:monospace;
+        grid-gap: 0em;
+        a.on-the-web-container{
+            grid-row:2;
+        }
+        h3.on-the-web-container{
+            grid-column: auto/span 2;
+            font-size: 4em;
+            margin:0 0;
+            padding-bottom:.75em;
+            align-self:center;
+            justify-self:center;
+        }
+        #github-link{
+            margin-right:auto;
+            align-self:center;
+        }
+        #normal-github-logo{
+            height:7em;
+        }
+        #purple-github-logo{
+            height:7em;
+            display:none;
+        }
+        #linked-in-link{
+            margin-left:auto;
+            align-self:center;
+        }
+        #purple-linkedin-logo{
+            display:none;
+        }
+    }
+    #linked-in-link:hover #normal-linkedin-logo{
+        display:none;
+    }
+    #linked-in-link:hover #purple-linkedin-logo{
+       display:grid;
+    }
+    #github-link:hover #normal-github-logo{
+        display:none;
+    }
+    #github-link:hover #purple-github-logo{
+        display:grid;
+    }
+
+    .logo-container{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        img.logo-container{
+            width:13em;
+            height:13em;
+            border-radius:.75em;
+        }
     }
 }
+
