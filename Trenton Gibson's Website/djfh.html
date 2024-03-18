@@ -1,0 +1,30 @@
+
+<body>
+<h1 style="color: green">
+    GeeksforGeeks
+</h1>
+
+<b>
+    Zoom in or out of the page to
+    get the current zoom value
+</b>
+
+<p>Current Zoom Level:
+    <span class="output">
+        </span>
+</p>
+
+<script>
+    window.addEventListener(
+        "resize", getSizes, false);
+
+    let out = document.querySelector(".output");
+
+    function getSizes() {
+        let zoom = ((window.outerWidth - 10)
+            / window.innerWidth) * 100;
+
+        out.textContent = zoom;
+    }
+</script>
+</body>

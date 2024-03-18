@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trenton Gibson</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dynamicStyles.css">
+    <link rel="icon" type="image/png"  href="favicon.ico">
+</head>
+<body>
+    <!--Top Navbar elements-->
+    <nav class="topNavBar">
+        <div class="top-navbar-home-link">
+            <a id="top-navbar-home-link" href="#" class="top-navbar-home-link">Trenton Gibson</a>
+        </div>
+        <div class="top-navbar-links-container">
+            <a href="#myPortfolio" class="top-navbar-links-container" id="my-portfolio-link">
+                My Portfolio</a>
+            <a href="#about" class="top-navbar-links-container" id="about-link">
+                About</a>
+            <a href="#contact" class="top-navbar-links-container" id="contact-link">
+                Contact</a>
+        </div>
+        <div class="hamburger-bttn">
+            <img class="hamburger-bttn-img" id="grey-hamburger-bttn" src="TransparentHamburgerBttn2.png" alt="Dropdown Symbol">
+            <img class="hamburger-bttn-img" id="purple-hamburger-bttn" src="PurpleHamburgerBttn.png" alt="Dropdown Symbol">
+        </div>
+    </nav>
+
+    <div class="dropdown-menu">
+        <div class="dropdown-links-container">
+            <a href="#myPortfolio" class="dropdown-links" id="dropdown-my-portfolio-link">
+                My Portfolio</a>
+            <a href="#about" class="dropdown-links" id="dropdown-about-link">
+                About</a>
+            <a href="#contact" class="dropdown-links" id="dropdown-contact-link">
+                Contact</a>
+        </div>
+
+    </div>
+
+    <!--Elements for container with the headshot and descriptors-->
+    <div class="headshot-title">
+        <div class="self-description-headers">
+            <div class="name-container">
+            <p class="name">Trenton Gibson</p>
+            </div>
+            <div class="descriptors">
+                <p class="descriptors" id="descriptor-analyst">Analyst</p>
+                <p class="descriptors" id="descriptor-programmer">Programmer</p>
+                <p class="descriptors" id="descriptor-designer">Designer</p>
+            </div>
+        </div>
+        <div class="headshot-below-headers">
+        <img id="myHeadshot" src="MyHeadshot.jpg" alt="Headshot of Trenton Gibson">
+        </div>
+    </div>
+
+    <!--Elements for the Personal Finance Manager Popup-->
+    <div class="pop-up-personal-finance-manager" id="pop-up-personal-finance-manager">
+        <div class="pop-up-finance-content">
+            <div class="pop-up-finance-close-button-container">
+                <button id="pop-up-finance-close-button">X</button>
+            </div>
+            <h3 id="heading-personal-finance-manager">Personal Finance Manager</h3>
+            <img id="image-personal-finance-manager" src="finance-manager.png" alt="Picture of financial management software">
+            <p id="text-personal-finance-manager">I built this personal finance manager with a combination of Python and SQLite.
+                It allows for the user to record transactions,  review the information of various accounts, and view the transaction history of those accounts.
+                Using this tool has saved me many hours from having to record financial information on paper.
+                To view the code for this project click on the link that says "My Coding Projects".</p>
+            <a class="pop-up-finance-content" href="https://github.com/Trenton-Gibson?tab=repositories">My Coding Projects</a>
+        </div>
+    </div>
+
+    <!--Elements for the Personal Website Popup-->
+    <div class="pop-up-personal-website" id="pop-up-personal-website">
+        <div class="pop-up-personal-website-content">
+            <div class="pop-up-personal-website-close-button-container">
+                    <button id="pop-up-personal-website-close-button">X</button>
+            </div>
+            <h3 id="heading-personal-website">Personal Website</h3>
+            <img id="image-personal-website" src="personal-website.png" alt="Picture of Trenton Gibson's Website.">
+            <p id="text-personal-website">I created the website you are currently viewing in a month-a-half whilst having no prior experience in HTML, JavaScript, or CSS.
+                I plan to add a blog onto my website which will act as a devlog for a video game I'm currently creating with several other computer science students.
+                To view the code for this project click on the link that says "My Coding Projects".</p>
+            <a class="pop-up-personal-website-content" href="https://github.com/Trenton-Gibson?tab=repositories">My Coding Projects</a>
+        </div>
+    </div>
+
+    <!--Elements for the Carbone's Pizzeria Website Popup-->
+    <div class="pop-up-carbones-website" id="pop-up-carbones-website">
+        <div class="pop-up-carbones-website-content">
+            <div class="pop-up-carbones-close-button-container">
+                <button id="pop-up-carbones-website-close-button">X</button>
+            </div>
+            <h3 class="carbonesMarketingSystem">Carbone's Pizzeria Marketing System</h3>
+            <img id="image-carbones-website" src="Carbone'sDoorPhoto.jpg" alt="Picture of Trenton Gibson's Website.">
+            <p id="pop-up-carbones-website-text" class="carbonesMarketingSystem">I'm building a Marketing System for the Carbone's Pizzeria restaurant chain.
+                There are over 30 locations distributed across the states of Minnesota, Wisconsin, and Montana.
+                The system would identify newly sold homes around the area of a particular Carbone's location.
+                With this information, Carbone's locations could send marketing material in the mail to those newly sold homes.
+                This would create a specific target for marketing allowing for better use of marketing dollars.
+                To view the code for this project click on the link that says "My Coding Projects".</p>
+            <a class="pop-up-carbones-website-content" href="https://github.com/Trenton-Gibson?tab=repositories">My Coding Projects</a>
+        </div>
+    </div>
+
+    <!--Elements for the Portfolio Container-->
+    <div class="myPortfolio" id="myPortfolio">
+    <h2 id="heading-my-portfolio">My Portfolio</h2>
+        <div class="personalFinanceManager">
+            <img class="personalFinanceManager" id="img-personal-finance-manager"  src="dollar-sign.png" alt="Picture of a cartoon dollar sign">
+            <div class="financeHoverEffect "></div>
+        </div>
+        <div class="personalWebsite">
+            <img id="img-personal-website" class="personalWebsite" src="cartoon-man.png" alt="Picture of a cartoon man">
+            <div class="personalWebsiteHoverEffect "></div>
+        </div>
+        <div class="carbonesMarketingSystem">
+            <img id="img-carbones-logo" class="carbonesMarketingSystem" src="CarbonesTransparent.png" alt="Picture of Carbone's Pizzeria logo">
+            <div class="carbonesHoverEffect "></div>
+        </div>
+    </div>
+
+    <!--Elements for the About Section-->
+    <div class="about" id="about">
+        <div class="about-container-image-circuts">
+            <img id="about-image-circuts" src="PurpleCircutrybyMichaelDziedzic.png" alt="Computer circutry in a red light.">
+        </div>
+        <div class="about-container-text">
+            <h2 id="heading-about">About</h2>
+            <p id="about-text">I'm a senior computer science major studying at the University of Northwestern St. Paul.
+                My education has given me practical experience in application development and in systems analysis and design.
+                In addition to knowing the web-based languages and Python, I have experience with Java, SQL, and Linux Terminal.
+                I'm particularly fascinated by the creative potential of programming and how you can build your own worlds just by typing out code.
+                </p>
+        </div>
+    </div>
+
+    <!--Elements for the Contact Section-->
+    <div class="contact" id="contact">
+        <div class="contact-form">
+            <form class="contact-form" id="contact-form-id" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f84b5316-28b6-4649-8257-858175074963">
+                <h2 id="heading-contact">Contact</h2>
+                <input class="contact-form" type="text" name="name" id="name" placeholder="Enter your full name" required>
+                <input class="contact-form" type="email" name="email" id="email" placeholder="Enter your email address" required>
+                <input class="contact-form" type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
+                <textarea class="contact-form" name="message" id="message" rows="10" placeholder="Tell me about your situation..."></textarea>
+                <button id="contact-button" type="submit">Send Contact Info</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Elements for the Bottom Navbar-->
+    <nav id="bottomNavBar">
+        <div class="my-links-container">
+          <h3 class="my-links-container" id="my-links-heading">Page Links</h3>
+            <a href="#" class="my-links-container" id="bot-nav-bar-home-link">
+                Back to Top</a>
+            <a href="#myPortfolio" class="my-links-container" id="bot-nav-bar-my-portfolio-link">
+                My Portfolio</a>
+            <a href="#about" class="my-links-container" id="bot-nav-bar-about-link">
+                About</a>
+            <a href="#contact" class="my-links-container" id="bot-nav-bar-contact-link">
+                Contact</a>
+        </div>
+        <div class="on-the-web-container">
+            <h3 class="on-the-web-container" id="on-the-web-heading">On The Web</h3>
+            <a href="https://www.linkedin.com/in/trenton-gibson/" class="on-the-web-container"
+                id="linked-in-link">
+                <img id="normal-linkedin-logo" src="TransparentLinkedinBttnDesign.png" alt="Linkedin Logo">
+                <img id="purple-linkedin-logo" src="PurpleLinkedinBttnDesign.png" alt="Purple Linkedin Logo">
+            </a>
+            <a href="https://github.com/Trenton-Gibson?tab=repositories" class="on-the-web-container"
+               id="github-link">
+                <img id="normal-github-logo" src="TransparentGithubBttnDesign.png" alt="Github Logo">
+                <img id="purple-github-logo" src="SmallPurpleGithubBttnDesign.png" alt="Purple Github Logo">
+            </a>
+        </div>
+        <div class="logo-container">
+            <img id="my-logo" class="logo-container" src="TitleIconWithPurpleBackground.png"
+                 alt="Binary numbers with a purple background">
+        </div>
+    </nav>
+</body>
+<script src="buttonFunctionality.js"></script>
+</html>

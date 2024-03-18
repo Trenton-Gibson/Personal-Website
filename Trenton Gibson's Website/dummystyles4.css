@@ -1,0 +1,9 @@
+.test-box{
+    display:block;
+    transition:all .5s ease-out;
+}
+/*html:target .test-box{*/
+/*    background:black;*/
+/*    width:500px;*/
+/*    height:500px;*/
+/*}*/
