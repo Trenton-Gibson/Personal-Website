@@ -1,0 +1,81 @@
+@media only screen and (min-width:0px){
+
+    .top-navbar-home-link{
+
+    }
+    .topNavBar{
+        height:17vw;
+        grid-gap:0em;
+    }
+    .hamburger-bttn{
+    }
+    #grey-hamburger-bttn{
+        display:flex;
+    }
+    #purple-hamburger-bttn{
+        display:none;
+    }
+    .top-navbar-links-container{
+        display:none;
+    }
+
+    .headshot-title{
+        display:grid;
+        width:100vw;
+        .self-description-headers{
+            .descriptors{
+                font-size:13vw;
+                #descriptor-designer{
+                    float:left;
+                }
+                #descriptor-analyst{
+
+                }
+            }
+        }
+    }
+    .headshot-below-headers{
+        grid-row:1;
+        #myHeadshot{
+            width:100vw;
+        }
+    }
+
+    .myPortfolio{
+        display:grid;
+        width:100vw;
+    }
+    .about{
+        display:grid;
+        .about-container-image-circuts{
+            display:none;
+        }
+    }
+    .contact{
+        display:flex;
+    }
+    #bottomNavBar{
+        display:grid;
+        .logo-container{
+            display:none
+        }
+    }
+}
+
+@media only screen and (min-width: 500px){
+    .topNavBar{
+        height:4em;
+    }
+    .top-navbar-home-link{
+        font-size:1.6em;
+    }
+    #grey-hamburger-bttn{
+        display:none;
+    }
+    #purple-hamburger-bttn{
+        display:none;
+    }
+    .top-navbar-links-container{
+        display:grid;
+    }
+}
