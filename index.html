@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trenton Gibson</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dynamicStyles.css">
     <link rel="icon" type="image/png"  href="favicon.ico">
 </head>
 <body>
     <!--Top Navbar elements-->
     <nav class="topNavBar">
         <div class="top-navbar-home-link">
-            <a href="#" class="top-navbar-home-link">Trenton Gibson</a>
+            <a id="top-navbar-home-link" href="#" class="top-navbar-home-link">Trenton Gibson</a>
         </div>
         <div class="top-navbar-links-container">
             <a href="#myPortfolio" class="top-navbar-links-container" id="my-portfolio-link">
@@ -22,7 +23,23 @@
             <a href="#contact" class="top-navbar-links-container" id="contact-link">
                 Contact</a>
         </div>
+        <div class="hamburger-bttn">
+            <img class="hamburger-bttn-img" id="grey-hamburger-bttn" src="TransparentHamburgerBttn2.png" alt="Dropdown Symbol">
+            <img class="hamburger-bttn-img" id="purple-hamburger-bttn" src="PurpleHamburgerBttn.png" alt="Dropdown Symbol">
+        </div>
     </nav>
+
+    <div class="dropdown-menu">
+        <div class="dropdown-links-container">
+            <a href="#descriptor-designer" class="dropdown-links" id="dropdown-my-portfolio-link">
+                My Portfolio</a>
+            <a href="#about" class="dropdown-links" id="dropdown-about-link">
+                About</a>
+            <a href="#contact" class="dropdown-links" id="dropdown-contact-link">
+                Contact</a>
+        </div>
+
+    </div>
 
     <!--Elements for container with the headshot and descriptors-->
     <div class="headshot-title">
@@ -143,7 +160,7 @@
           <h3 class="my-links-container" id="my-links-heading">Page Links</h3>
             <a href="#" class="my-links-container" id="bot-nav-bar-home-link">
                 Back to Top</a>
-            <a href="#myPortfolio" class="my-links-container" id="bot-nav-bar-my-portfolio-link">
+            <a href="#descriptor-designer" class="my-links-container" id="bot-nav-bar-my-portfolio-link">
                 My Portfolio</a>
             <a href="#about" class="my-links-container" id="bot-nav-bar-about-link">
                 About</a>

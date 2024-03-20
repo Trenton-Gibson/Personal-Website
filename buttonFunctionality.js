@@ -16,19 +16,24 @@ const personalWebsiteCloseBttn=document.querySelector("#pop-up-personal-website-
 const carbonesPopup=document.querySelector("#pop-up-carbones-website")
 const carbonesImg=document.querySelector(".carbonesHoverEffect")
 const carbonesCloseBttn=document.querySelector("#pop-up-carbones-website-close-button")
+const greyHambrgrBttn=document.querySelector("#grey-hamburger-bttn")
+const purpleHambrgrBttn=document.querySelector("#purple-hamburger-bttn")
+const dropdownLinks=document.querySelectorAll(".dropdown-links")
+const dropdownMenu=document.querySelector(".dropdown-menu")
+const homeLink=document.querySelector("#top-navbar-home-link")
 const popupArray=["#pop-up-personal-finance-manager","#pop-up-personal-website","#pop-up-carbones-website"]
 
 //This function displays the content of the popup that is clicked on.
 function openPopup(popup){
     popup=document.querySelector(`${popup}`)
-    popup.style.display="block"
+    popup.style.height="100%"
     body.style.overflow="hidden"
 }
 
 //This function exits the user from the current popup.
 function closePopup(popup){
     popup=document.querySelector(`${popup}`)
-    popup.style.display="none"
+    popup.style.height="0%"
     body.style.overflow="visible"
 }
 
@@ -71,6 +76,40 @@ window.addEventListener("click", function(evt){
 window.onunload=function(){
     document.getElementById("contact-form-id").reset()
 }
+window.
+window.addEventListener("click",(evt) =>dropdown(evt))
+
+function dropdown(evt){
+    console.log(evt.target)
+    if(evt.target==greyHambrgrBttn){
+        dropdownMenu.style.width="100%"
+        dropdownMenu.style.height="100%"
+        dropdownMenu.style.background="black"
+        greyHambrgrBttn.style.display="none"
+        purpleHambrgrBttn.style.display="flex"
+        body.style.overflow="hidden"
+        dropdownLinks.forEach( link =>{
+            link.style.fontSize="10vw"
+        })
+    }
+    if(evt.target==purpleHambrgrBttn){
+        dropdownMenu.style.width="100%"
+        dropdownMenu.style.height="0%"
+        greyHambrgrBttn.style.display="flex"
+        purpleHambrgrBttn.style.display="none"
+        body.style.overflow="visible"
+    }
+    dropdownLinks.forEach( link =>{
+        if(evt.target==link||evt.target==homeLink){
+            dropdownMenu.style.width="100%"
+            dropdownMenu.style.height="0%"
+            greyHambrgrBttn.style.display="flex"
+            purpleHambrgrBttn.style.display="none"
+            body.style.overflow="visible"
+        }
+    })
+}
+
 window.addEventListener("click", (evt) =>clicked(evt))
 function clicked(evt){
     console.log(evt.target)
