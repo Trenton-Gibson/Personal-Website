@@ -228,7 +228,7 @@ img{
         .financeHoverEffect{
             position:absolute;
             width:90vw;
-            height:91vw;
+            height:100%;
             background-color: rgba(0,0,0,.4);
             opacity:0;
             transition: 0.5s ease;
@@ -240,6 +240,7 @@ img{
          opacity:1;
      }
     .personalWebsite{
+        position:relative;
         display: grid;
         align-content: center;
         justify-content: center;
@@ -253,7 +254,7 @@ img{
         .personalWebsiteHoverEffect{
             position:absolute;
             width:90vw;
-            height:91vw;
+            height:100%;
             background-color: rgba(0,0,0,.4);
             opacity:0;
             transition: 0.5s ease;
@@ -265,6 +266,7 @@ img{
         opacity:1;
     }
     .carbonesMarketingSystem{
+        position:relative;
         display: grid;
         align-content: center;
         justify-content: center;
@@ -279,7 +281,7 @@ img{
         .carbonesHoverEffect{
             position:absolute;
             width:90vw;
-            height:91vw;
+            height:100%;
             background-color: rgba(0,0,0,.4);
             opacity:0;
             transition: 0.5s ease;
@@ -305,7 +307,6 @@ img{
     transition:height .75s ease-in-out;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-
     .pop-up-finance-content {
         width: 95vw;
         height: auto;
@@ -315,7 +316,6 @@ img{
         border: .5em solid;
         border-radius: 1.5em;
         border-color: #8001FE;
-
         #pop-up-finance-close-button{
             float:right;
             margin:3vw 3vw;
@@ -365,14 +365,15 @@ img{
 
 /*Styles for the Personal Website Popup*/
 .pop-up-personal-website{
-    display:none;
+    display:block;
     z-index: 3;
     position: fixed;
     overflow: auto;
     width:100%;
-    height:100%;
+    height:0%;
     left: 0;
     top: 0;
+    transition:height .75s ease-in-out;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
     .pop-up-personal-website-content{
@@ -433,14 +434,15 @@ img{
 
 /*Styles for the Carbone's Website Popup*/
 .pop-up-carbones-website{
-    display:none;
+    display:block;
     z-index: 3;
     position: fixed;
     overflow: auto;
     width:100%;
-    height:100%;
+    height:0%;
     left: 0;
     top: 0;
+    transition:height .75s ease-in-out;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
     .pop-up-carbones-website-content {
@@ -568,15 +570,16 @@ img{
             padding: .5em;
             background:white;
             font-family:monospace;
-            font-size:1em;
+            font-size:3vw;
             width:71vw;
         }
         textarea.contact-form{
             resize: vertical;
         }
         #contact-button{
-            margin:2em 0;
-            padding:1.2em;
+            font-size:3.5vw;
+            margin:5vw 0;
+            padding:4vw;
             background:black;
             color:white;
             border-radius:2em;
