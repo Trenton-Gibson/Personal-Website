@@ -1,0 +1,55 @@
+/*Styles for Contact container*/
+.contact{
+    width:92vw;
+    padding: 12vw 0vw;
+    margin-right:auto;
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    .contact-form{
+        align-items:center;
+        justify-content:center;
+        background:#8001FE;
+        border-radius:2em;
+        display: flex;
+        flex-direction:column;
+        width:80%;
+        padding: 0 0;
+        #heading-contact{
+            font-size:12vw;
+            padding:3vw;
+            color:white;
+        }
+        input.contact-form, textarea.contact-form{
+            margin:.75em 0 ;
+            padding: .5em;
+            background:white;
+            font-family:monospace;
+            font-size:1em;
+        }
+        textarea.contact-form{
+            resize: vertical;
+        }
+        #contact-button{
+            margin:2em 0;
+            padding:1.2em;
+            background:black;
+            color:white;
+            border-radius:2em;
+            font-family:monospace;
+        }
+        #name{
+
+        }
+        #email{
+
+        }
+        #phone{
+
+        }
+        #message{
+
+        }
+    }
+}

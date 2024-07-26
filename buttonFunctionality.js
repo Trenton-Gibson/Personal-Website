@@ -8,27 +8,36 @@
 //and receiving inputs from the popup exit buttons so the user may exit from the popup.
 const body=document.querySelector("body")
 const financePopup=document.querySelector("#pop-up-personal-finance-manager")
-const financeImg=document.querySelector(".financeHoverEffect")
+const financeImg=document.querySelector("#financeHoverEffect")
 const financeCloseBttn=document.querySelector("#pop-up-finance-close-button")
 const personalWebsitePopup=document.querySelector("#pop-up-personal-website")
-const personalWebsiteImg=document.querySelector(".personalWebsiteHoverEffect")
+const personalWebsiteImg=document.querySelector("#personalWebsiteHoverEffect")
 const personalWebsiteCloseBttn=document.querySelector("#pop-up-personal-website-close-button")
 const carbonesPopup=document.querySelector("#pop-up-carbones-website")
-const carbonesImg=document.querySelector(".carbonesHoverEffect")
+const carbonesImg=document.querySelector("#carbonesHoverEffect")
 const carbonesCloseBttn=document.querySelector("#pop-up-carbones-website-close-button")
+const greyHambrgrBttn=document.querySelector("#grey-hamburger-bttn")
+const purpleHambrgrBttn=document.querySelector("#purple-hamburger-bttn")
+const dropdownLinks=document.querySelectorAll(".dropdown-links")
+const dropdownMenu=document.querySelector(".dropdown-menu")
+const homeLink=document.querySelector("#top-navbar-home-link")
+const contactBttn=document.querySelector("#contact-button")
 const popupArray=["#pop-up-personal-finance-manager","#pop-up-personal-website","#pop-up-carbones-website"]
-
 //This function displays the content of the popup that is clicked on.
 function openPopup(popup){
     popup=document.querySelector(`${popup}`)
-    popup.style.display="block"
+    popup.style.height="100%"
     body.style.overflow="hidden"
 }
 
 //This function exits the user from the current popup.
 function closePopup(popup){
     popup=document.querySelector(`${popup}`)
-    popup.style.display="none"
+    popup.style.height="0%"
+    window.setTimeout(restoreScrollBar, 750)
+}
+//This function restore the main scrollbar in an aesthetically pleasing way
+function restoreScrollBar(){
     body.style.overflow="visible"
 }
 
@@ -37,6 +46,8 @@ function closePopup(popup){
 //element clicked.
 
 window.addEventListener("click", function(evt){
+    popupArray.forEach(popup =>{
+    })
     if(evt.target==financePopup){
         closePopup(popupArray[0])
     }
@@ -68,9 +79,50 @@ window.addEventListener("click", function(evt){
 
 //This event listener checks if the contact form was submitted and the website consequently unloaded.
 //If it is then the form is cleared of all data previously inputted.
-window.onunload=function(){
-    document.getElementById("contact-form-id").reset()
+window.addEventListener("click", (evt) =>{
+    if (contactBttn==evt.target){
+        window.addEventListener("blur", (evt)=>{
+            document.getElementById("contact-form-id").reset()
+        })
+    }
+})
+window.addEventListener("click",(evt) =>dropdown(evt))
+function dropdown(evt){
+    if(evt.target==greyHambrgrBttn){
+        dropdownMenu.style.width="100%"
+        dropdownMenu.style.height="100%"
+        dropdownMenu.style.background="black"
+        greyHambrgrBttn.style.display="none"
+        purpleHambrgrBttn.style.display="flex"
+        body.style.overflow="hidden"
+        dropdownLinks.forEach( link =>{
+            link.style.fontSize="10vw"
+        })
+    }
+    if(evt.target==purpleHambrgrBttn){
+        dropdownMenu.style.width="100%"
+        dropdownMenu.style.height="0%"
+        greyHambrgrBttn.style.display="flex"
+        purpleHambrgrBttn.style.display="none"
+        body.style.overflow="visible"
+        dropdownLinks.forEach( link =>{
+            link.style.fontSize="0vw"
+        })
+    }
+    dropdownLinks.forEach( link =>{
+        if(evt.target==link||evt.target==homeLink){
+            dropdownMenu.style.width="100%"
+            dropdownMenu.style.height="0%"
+            greyHambrgrBttn.style.display="flex"
+            purpleHambrgrBttn.style.display="none"
+            body.style.overflow="visible"
+            dropdownLinks.forEach( link =>{
+                link.style.fontSize="0vw"
+            })
+        }
+    })
 }
+
 window.addEventListener("click", (evt) =>clicked(evt))
 function clicked(evt){
     console.log(evt.target)
