@@ -91,12 +91,6 @@
             }
         }
     }
-    .about{
-        display:grid;
-        .about-container-image-circuts{
-            display:none;
-        }
-    }
     .contact{
         display:flex;
     }
@@ -136,6 +130,14 @@
 }
 
 @media only screen and (min-width: 601px){
+    .about-container-image-circuts{
+        height:40em;
+        #about-image-circuts{
+            height:100%;
+            width:100%;
+            object-fit:fill;
+        }
+    }
     .topNavBar{
         height:4em;
     }

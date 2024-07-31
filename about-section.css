@@ -3,16 +3,14 @@
     background-color:#8001FE;
     display: grid;
     position: relative;
-    grid-gap:2em;
-    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
     #heading-about{
         font-size:14vw;
         color:#8001FE;
         text-align:center;
         margin:0 10vw;
-        padding:.3em;
+        padding:3vw;
         background-color:white;
-        border-radius:2em;
+        border-radius:11vw;
     }
     .about-container-text{
         padding:7vw 0;
@@ -20,15 +18,10 @@
     #about-text{
         color:white;
         padding-top:7vw;
-        margin:0 5vw;
+        margin:0 6vw;
         font-size:4.4vw;
     }
     .about-container-image-circuts{
-        height:40em;
-        #about-image-circuts{
-            height:100%;
-            width:100%;
-            object-fit:fill;
-        }
+        display:none;
     }
 }
