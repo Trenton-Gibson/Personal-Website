@@ -32,11 +32,11 @@
             resize: vertical;
         }
         #contact-button{
-            margin:2em 0;
-            padding:1.2em;
+            margin:5vw 0;
+            padding:4vw;
             background:black;
             color:white;
-            border-radius:2em;
+            border-radius:6vw;
             font-family:monospace;
         }
         #name{
