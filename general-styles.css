@@ -8,22 +8,20 @@ div{
 
 h2{
     font-family:monospace;
-    font-size:50px;
     color: #8001FE;
-    margin-block-start: 0em;
-    margin-block-end:0em;
+    margin-block-start: 0;
+    margin-block-end:0;
 }
 h3{
     color: #8001FE;
     font-family:monospace;
-    font-size:35px;
 }
 p{
-    margin-block-start: 0em;
-    margin-block-end:0em;
+    margin-block-start: 0;
+    margin-block-end:0;
     color: #8001FE;
     font-family:monospace;
-    font-size:1.75em;
+    font-size:3.95vw;
 }
 
 button{

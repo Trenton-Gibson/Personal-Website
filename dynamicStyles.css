@@ -29,68 +29,6 @@
             padding-top:7.4vw;
         }
     }
-
-    /*.headshot-title{*/
-    /*    display:grid;*/
-    /*    width:100vw;*/
-    /*    .self-description-headers{*/
-    /*        .descriptors{*/
-    /*            font-size:13vw;*/
-    /*            #descriptor-designer{*/
-    /*                float:left;*/
-    /*            }*/
-    /*            #descriptor-analyst{*/
-
-    /*            }*/
-    /*        }*/
-    /*    }*/
-    /*}*/
-    /*.headshot-below-headers{*/
-    /*    grid-row:1;*/
-    /*    #myHeadshot{*/
-    /*        width:100vw;*/
-    /*    }*/
-    /*}*/
-
-    .myPortfolio{
-        display:grid;
-        width:100vw;
-        grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
-        #heading-my-portfolio{
-            grid-column: auto / span 1;
-            font-size:9vw;
-            width:71vw;
-            height:11vw;
-        }
-        .personalFinanceManager{
-            #img-personal-finance-manager{
-                width:60vw;
-            }
-            #financeHoverEffect{
-                width:60vw;
-                height:61.4vw;
-            }
-        }
-        .personalWebsite{
-            #img-personal-website{
-                width:60vw;
-            }
-            #personalWebsiteHoverEffect{
-                width:60vw;
-                height:61.4vw;
-            }
-        }
-        .carbonesMarketingSystem{
-            #img-carbones-logo{
-                height:60vw;
-                width:60vw;
-            }
-            #carbonesHoverEffect{
-                width:60vw;
-                height:61.4vw;
-            }
-        }
-    }
     .contact{
         display:flex;
     }
@@ -98,33 +36,6 @@
         display:grid;
         .logo-container{
             display:none
-        }
-    }
-    .pop-up-personal-finance-manager{
-
-        .pop-up-finance-content{
-            width:80%;
-            #image-personal-finance-manager{
-                width:77vw;
-            }
-        }
-    }
-    .pop-up-personal-website{
-
-        .pop-up-personal-website-content{
-            width:80%;
-            #image-personal-website{
-                width:77vw;
-            }
-        }
-    }
-    .pop-up-carbones-website{
-
-        .pop-up-carbones-website-content{
-            width:80%;
-            #image-carbones-website{
-                width:77vw;
-            }
         }
     }
 }

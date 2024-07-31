@@ -96,6 +96,7 @@ function dropdown(evt){
         purpleHambrgrBttn.style.display="flex"
         body.style.overflow="hidden"
         dropdownLinks.forEach( link =>{
+            link.style.transition="font-size 1.75s ease-in-out"
             link.style.fontSize="10vw"
         })
     }
@@ -106,6 +107,7 @@ function dropdown(evt){
         purpleHambrgrBttn.style.display="none"
         body.style.overflow="visible"
         dropdownLinks.forEach( link =>{
+            link.style.transition="font-size .5s ease-in-out"
             link.style.fontSize="0vw"
         })
     }
@@ -117,6 +119,7 @@ function dropdown(evt){
             purpleHambrgrBttn.style.display="none"
             body.style.overflow="visible"
             dropdownLinks.forEach( link =>{
+                link.style.transition="font-size .5s ease-in-out"
                 link.style.fontSize="0vw"
             })
         }

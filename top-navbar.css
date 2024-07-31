@@ -64,7 +64,9 @@
     color: #8001FE;
     font-family:monospace;
     font-size: 0vw;
-    transition:font-size .75s ease-in-out;
+    /*JavaScript lessens transition time when*/
+    /*closing dropdown menu*/
+    transition:font-size 1.75s ease-in-out;
 }
 .dropdown-links:hover{
     transition: 0.5s ease;
