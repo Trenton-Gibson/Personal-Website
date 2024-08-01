@@ -4,28 +4,12 @@
     position: fixed;
     width:100%;
     z-index:4;
-    height:7vw;
+    height:10vw;
     display:grid;
-    grid-gap:2em;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
     background:linear-gradient( black, #350E56);
     .top-navbar-links-container{
-        padding: 1.5em 0;
-        grid-column:auto/span 2;
-        justify-self:right;
-        margin-top: 1vw;
-        align-self:center;
-        a.top-navbar-links-container{
-            font-family:monospace;
-            color: #8001FE;
-            font-size:2.2em;
-            padding:2.2em;
-            margin: 0;
-        }
-        a.top-navbar-links-container:hover{
-            transition: 0.5s ease;
-            color:white;
-        }
+        display:none;
     }
     #purple-hamburger-bttn{
         display:none
@@ -35,7 +19,7 @@
         width:14vw;
         justify-self:right;
         padding-right:5vw;
-        display:grid;
+        display:flex;
         .hamburger-bttn-img{
             height:9vw;
             justify-content:center;
@@ -59,11 +43,11 @@
     display:grid;
 }
 .dropdown-links{
-    margin-bottom:.5em;
-    padding: 0 .5em;
+    margin-bottom:5vw;
+    padding: 0 5vw;
     color: #8001FE;
     font-family:monospace;
-    font-size: 0vw;
+    font-size: 0;
     /*JavaScript lessens transition time when*/
     /*closing dropdown menu*/
     transition:font-size 1.75s ease-in-out;
@@ -76,10 +60,10 @@
     margin-top:50vw;
 }
 .top-navbar-home-link{
-    margin: .5em;
+    margin: 2vw;
     font-family:monospace;
     color:white;
-    font-size:1.8em;
+    font-size:4vw;
     align-self:center;
     a.top-navbar-home-link:hover{
         transition: 0.5s ease;

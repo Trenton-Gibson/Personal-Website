@@ -5,15 +5,13 @@
     display: grid;
     position: relative;
     background-color: #8001FE;
-    height: 57vw;
+    height: 60vw;
     grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
-    /*grid-template-columns: repeat(12,1fr);*/
 
     /*Styles for text next to my headshot*/
-
     .self-description-headers {
         width:50vw;
-        padding-top:3.4vw;
+        padding-top:7.4vw;
         grid-row: 1;
         z-index: 1;
 
@@ -22,39 +20,25 @@
             font-family: monospace;
 
             p.descriptors {
-                margin: .15em;
-                text-align: center;
+                margin: 1.9vw 0;
                 color: white;
                 background-color: black;
+                border-radius:4vw;
             }
-
             #descriptor-analyst {
-                padding-left:.5em;
                 margin-left:0;
-                margin-right:3em;
-                border-radius:2em;
-                text-align:left;
+                width:26vw;
             }
-
             #descriptor-designer {
-                width: 4.75em;
+                width:29vw;
                 float: right;
-                border-radius:2em;
-                padding-left:.25em;
-                padding-right:.25em;
                 margin-right:0;
             }
-
             #descriptor-programmer {
                 color: black;
                 background-color: white;
-                width: 5.75em;
+                width: 37vw;
                 margin: auto;
-                border-radius:2em;
-                padding-left:.25em;
-                padding-right:.25em;
-                margin-top:.4em;
-                margin-bottom:.25em;
             }
         }
     }
@@ -74,7 +58,7 @@
     }
     /*Styles for headshot*/
     .headshot-below-headers{
-        padding-top:7vw;
+        padding-top:10vw;
         grid-row: 1;
         background-color:#8001FE;
         height:33vw;

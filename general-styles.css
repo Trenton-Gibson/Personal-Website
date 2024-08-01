@@ -2,10 +2,6 @@
 body{
     margin:0;
 }
-div{
-    display:block;
-}
-
 h2{
     font-family:monospace;
     color: #8001FE;
@@ -23,11 +19,9 @@ p{
     font-family:monospace;
     font-size:3.95vw;
 }
-
 button{
     position:relative;
 }
-
 img{
     overflow: hidden;
     overflow-clip-margin: unset;
