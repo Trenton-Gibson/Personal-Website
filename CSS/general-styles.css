@@ -1,0 +1,28 @@
+/*Styles for general tags*/
+body{
+    margin:0;
+}
+h2{
+    font-family:monospace;
+    color: #8001FE;
+    margin-block-start: 0;
+    margin-block-end:0;
+}
+h3{
+    color: #8001FE;
+    font-family:monospace;
+}
+p{
+    margin-block-start: 0;
+    margin-block-end:0;
+    color: #8001FE;
+    font-family:monospace;
+    font-size:3.95vw;
+}
+button{
+    position:relative;
+}
+img{
+    overflow: hidden;
+    overflow-clip-margin: unset;
+}

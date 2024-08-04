@@ -1,0 +1,79 @@
+/*Styles for the container holding the headshot and my titles*/
+.headshot-title {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    position: relative;
+    background: linear-gradient(#8001FE, #CF9BFE);
+    height: 84vw;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    padding-top:3vw;
+    /*Styles for text next to my headshot*/
+    .self-description-headers {
+        grid-row: 1;
+        display:grid;
+        align-self:center;
+        grid-column:span 2;
+        .descriptors {
+            font-size: 5.7vw;
+            font-family: monospace;
+            margin-left:2vw;
+            p.descriptors {
+                margin: 4.9vw 0;
+                color: white;
+                background-color: black;
+                border-radius:4vw;
+            }
+            #descriptor-analyst {
+                margin-left:0;
+                width:25vw;
+                text-align:center;
+            }
+            #descriptor-designer {
+                width:28vw;
+                text-align:center;
+                color: black;
+                background-color: white;
+            }
+            #descriptor-programmer {
+                width: 35vw;
+                margin: 0;
+                text-align:center;
+            }
+        }
+    }
+    .name-container{
+        height:20vw;
+        padding-top:13vw;
+        margin-left:2vw;
+    }
+    .name{
+        text-align:center;
+        color:white;
+        font-family:monospace;
+        font-size:7.5vw;
+        background:black;
+        border-radius:5vw;
+        width:35vw;
+        font-weight:bold;
+    }
+    /*Styles for headshot*/
+    .headshot-below-headers{
+        grid-column:span 3;
+        padding-top:12vw;
+        grid-row: 1;
+        height:33vw;
+        display:grid;
+        #myHeadshot{
+            height: 68vw;
+            width:59vw;
+            object-fit: cover;
+            border:solid;
+            border-color:white;
+            border-radius: 10vw 0 0 10vw;
+            margin-left:auto;
+            border-right:none;
+            border-width:1vw;
+        }
+    }
+}
