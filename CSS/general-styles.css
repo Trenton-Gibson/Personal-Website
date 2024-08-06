@@ -1,26 +1,44 @@
 /*Styles for general tags*/
+@font-face {
+    font-family:"Trebuchet MS 2";
+    src: url("../trebuc.ttf") format("truetype");
+}
 body{
     margin:0;
 }
+h1{
+    font-family:"Trebuchet MS 2", "Trebuchet MS";
+}
 h2{
-    font-family:monospace;
-    color: #8001FE;
+    font-family:"Trebuchet MS 2", "Trebuchet MS";
+    color: #7800B1FF;
     margin-block-start: 0;
     margin-block-end:0;
 }
 h3{
-    color: #8001FE;
-    font-family:monospace;
+    color: #7800B1FF;
+    font-family:"Trebuchet MS 2", "Trebuchet MS";
+}
+a{
+    color: #7800B1FF;
+    font-family:"Trebuchet MS 2", "Trebuchet MS";
 }
 p{
     margin-block-start: 0;
     margin-block-end:0;
-    color: #8001FE;
-    font-family:monospace;
+    color: #7800B1FF;
+    font-family:"Trebuchet MS 2", "Trebuchet MS";
     font-size:3.95vw;
+}
+textarea{
+    font-family:"Trebuchet MS 2", "Trebuchet MS";
+}
+input{
+    font-family:"Trebuchet MS 2", "Trebuchet MS";
 }
 button{
     position:relative;
+    font-family:"Trebuchet MS 2", "Trebuchet MS";
 }
 img{
     overflow: hidden;

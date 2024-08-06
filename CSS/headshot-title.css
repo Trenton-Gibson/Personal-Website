@@ -4,7 +4,7 @@
     margin-right: auto;
     display: grid;
     position: relative;
-    background: linear-gradient(#8001FE, #CF9BFE);
+    background: #7800B1FF;
     height: 84vw;
     grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
     padding-top:3vw;
@@ -16,7 +16,6 @@
         grid-column:span 2;
         .descriptors {
             font-size: 5.7vw;
-            font-family: monospace;
             margin-left:2vw;
             p.descriptors {
                 margin: 4.9vw 0;
@@ -44,13 +43,14 @@
     }
     .name-container{
         height:20vw;
-        padding-top:13vw;
+        padding-top:8vw;
         margin-left:2vw;
+        display:grid;
+        align-content:center;
     }
     .name{
         text-align:center;
         color:white;
-        font-family:monospace;
         font-size:7.5vw;
         background:black;
         border-radius:5vw;

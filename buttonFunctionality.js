@@ -20,6 +20,7 @@ const greyHambrgrBttn=document.querySelector("#grey-hamburger-bttn")
 const purpleHambrgrBttn=document.querySelector("#purple-hamburger-bttn")
 const dropdownLinks=document.querySelectorAll(".dropdown-links")
 const dropdownMenu=document.querySelector(".dropdown-menu")
+const dropdownLinksContainer=document.querySelector(".dropdown-links-container")
 const homeLink=document.querySelector("#top-navbar-home-link")
 const contactBttn=document.querySelector("#contact-button")
 const popupArray=["#pop-up-personal-finance-manager","#pop-up-personal-website","#pop-up-carbones-website"]
@@ -89,6 +90,7 @@ window.addEventListener("click", (evt) =>{
 window.addEventListener("click",(evt) =>dropdown(evt))
 function dropdown(evt){
     if(evt.target==greyHambrgrBttn){
+        dropdownLinksContainer.style.height="65vw"
         dropdownMenu.style.width="100%"
         dropdownMenu.style.height="100%"
         dropdownMenu.style.background="black"
@@ -101,6 +103,7 @@ function dropdown(evt){
         })
     }
     if(evt.target==purpleHambrgrBttn){
+        dropdownLinksContainer.style.height="0"
         dropdownMenu.style.width="100%"
         dropdownMenu.style.height="0%"
         greyHambrgrBttn.style.display="flex"
@@ -113,6 +116,7 @@ function dropdown(evt){
     }
     dropdownLinks.forEach( link =>{
         if(evt.target==link||evt.target==homeLink){
+            dropdownLinksContainer.style.height="0"
             dropdownMenu.style.width="100%"
             dropdownMenu.style.height="0%"
             greyHambrgrBttn.style.display="flex"

@@ -10,7 +10,7 @@
     .contact-form{
         align-items:center;
         justify-content:center;
-        background:#8001FE;
+        background: #7800B1FF;
         border-radius:5vw;
         display: flex;
         flex-direction:column;
@@ -25,7 +25,6 @@
             margin:1.75vw 0 ;
             padding: 1.75vw;
             background:white;
-            font-family:monospace;
             font-size:2.75vw;
         }
         textarea.contact-form{
@@ -37,7 +36,6 @@
             background:black;
             color:white;
             border-radius:6vw;
-            font-family:monospace;
             font-size:3vw;
         }
         #name{

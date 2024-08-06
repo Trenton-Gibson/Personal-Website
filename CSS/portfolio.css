@@ -14,7 +14,7 @@
         height:13vw;
         color: white;
         text-align: center;
-        background: linear-gradient(#8001FE,#CF9BFE);
+        background: #7800B1FF;
         border-radius:13vw;
         margin-right:auto;
         margin-left:auto;
@@ -118,21 +118,20 @@
         box-sizing: border-box;
         border: 1.6vw solid;
         border-radius: 6vw;
-        border-color: #8001FE;
+        border-color: #7800B1FF;
         #pop-up-finance-close-button{
             float:right;
             margin: 1.35vw 3vw;
             background:rgba(0,0,0,0);
             border-radius:1.5vw;
             border-color:lightslategrey;
-            color:#8001FE;
-            font-family:monospace;
+            color:#7800B1FF;
             font-size:4.4vw;
         }
         #pop-up-finance-close-button:hover{
             transition:.5s ease;
             color:white;
-            background:#8001FE;
+            background:#7800B1FF;
         }
         #image-personal-finance-manager{
             display:block;
@@ -144,7 +143,6 @@
             padding:5vw;
         }
         a.pop-up-finance-content{
-            font-family: monospace;
             font-size:4vw;
             padding:2vw;
             margin-left:3vw;
@@ -155,8 +153,8 @@
         }
         a.pop-up-finance-content:hover{
             transition: 0.5s ease;
-            color:#8001FE;
-            text-decoration-color:#8001FE;
+            color:#7800B1FF;
+            text-decoration-color:#7800B1FF;
         }
         #heading-personal-finance-manager{
             text-align:center;
@@ -186,7 +184,7 @@
         box-sizing: border-box;
         border: 1.6vw solid;
         border-radius: 6vw;
-        border-color: #8001FE;
+        border-color: #7800B1FF;
         #image-personal-website{
             display:block;
             width:77vw;
@@ -203,17 +201,15 @@
             background:rgba(0,0,0,0);
             border-radius:1.5vw;
             border-color:lightslategrey;
-            color:#8001FE;
-            font-family:monospace;
+            color:#7800B1FF;
             font-size:4.4vw;
         }
         #pop-up-personal-website-close-button:hover{
             transition:.5s ease;
             color:white;
-            background:#8001FE;
+            background:#7800B1FF;
         }
         a.pop-up-personal-website-content{
-            font-family: monospace;
             font-size:4vw;
             padding:2vw;
             margin-left:3vw;
@@ -224,8 +220,8 @@
         }
         a.pop-up-personal-website-content:hover{
             transition: 0.5s ease;
-            color:#8001FE;
-            text-decoration-color:#8001FE;
+            color:#7800B1FF;
+            text-decoration-color:#7800B1FF;
         }
         #text-personal-website{
             padding:5vw;
@@ -254,21 +250,20 @@
         box-sizing: border-box;
         border: 1.6vw solid;
         border-radius: 6vw;
-        border-color: #8001FE;
+        border-color: #7800B1FF;
         #pop-up-carbones-website-close-button{
             float:right;
             margin: 1.35vw 3vw;
             background:rgba(0,0,0,0);
             border-radius:1.5vw;
             border-color:lightslategrey;
-            color:#8001FE;
-            font-family:monospace;
+            color:#7800B1FF;
             font-size:4.4vw;
         }
         #pop-up-carbones-website-close-button:hover{
             transition:.5s ease;
             color:white;
-            background:#8001FE;
+            background:#7800B1FF;
         }
         #image-carbones-website{
             display:block;
@@ -286,7 +281,6 @@
             padding:0 5vw;
         }
         a.pop-up-carbones-website-content{
-            font-family: monospace;
             font-size:4vw;
             padding:2vw;
             margin-left:3vw;
@@ -297,8 +291,8 @@
         }
         a.pop-up-carbones-website-content:hover{
             transition: 0.5s ease;
-            color:#8001FE;
-            text-decoration-color:#8001FE;
+            color:#7800B1FF;
+            text-decoration-color:#7800B1FF;
         }
     }
 }

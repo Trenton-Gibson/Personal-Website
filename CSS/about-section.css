@@ -1,11 +1,10 @@
 /*Styles for the About container*/
 .about{
-    background:linear-gradient(#8001FE, #CF9BFE);
+    background:#7800B1FF;
     display: grid;
     position: relative;
     #heading-about{
         font-size:12vw;
-        color:#8001FE;
         text-align:center;
         margin:0 17vw;
         padding:1vw;
