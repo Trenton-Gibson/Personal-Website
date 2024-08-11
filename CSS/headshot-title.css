@@ -20,7 +20,7 @@
             p.descriptors {
                 margin: 4.9vw 0;
                 color: white;
-                background-color: black;
+                background-color: rgb(45, 45, 45);
                 border-radius:4vw;
             }
             #descriptor-analyst {
@@ -31,7 +31,7 @@
             #descriptor-designer {
                 width:28vw;
                 text-align:center;
-                color: black;
+                color: rgb(45, 45, 45);
                 background-color: white;
             }
             #descriptor-programmer {
@@ -52,7 +52,7 @@
         text-align:center;
         color:white;
         font-size:7.5vw;
-        background:black;
+        background:rgb(45, 45, 45);
         border-radius:5vw;
         width:35vw;
         font-weight:bold;

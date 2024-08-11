@@ -127,6 +127,7 @@
             border-color:lightslategrey;
             color:#7800B1FF;
             font-size:4.4vw;
+            padding:1vw 1.5vw;
         }
         #pop-up-finance-close-button:hover{
             transition:.5s ease;
@@ -203,6 +204,7 @@
             border-color:lightslategrey;
             color:#7800B1FF;
             font-size:4.4vw;
+            padding:1vw 1.5vw;
         }
         #pop-up-personal-website-close-button:hover{
             transition:.5s ease;
@@ -259,6 +261,7 @@
             border-color:lightslategrey;
             color:#7800B1FF;
             font-size:4.4vw;
+            padding:1vw 1.5vw;
         }
         #pop-up-carbones-website-close-button:hover{
             transition:.5s ease;

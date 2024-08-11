@@ -7,7 +7,7 @@
     height:13vw;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
-    background:linear-gradient( black, #350E56);
+    background:rgb(45, 45, 45);
     .top-navbar-links-container{
         display:none;
     }
