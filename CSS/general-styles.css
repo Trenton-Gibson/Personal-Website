@@ -32,13 +32,26 @@ p{
 }
 textarea{
     font-family:"Trebuchet MS 2", "Trebuchet MS";
+    border-style:solid;
+    border-color:rgb(45, 45, 45);
+    border-width:.75vw;
+
 }
+/*::-webkit-resizer{*/
+/*    color:white;*/
+/*}*/
 input{
     font-family:"Trebuchet MS 2", "Trebuchet MS";
+    border-style:solid;
+    border-color:rgb(45, 45, 45);
+    border-width:.75vw;
 }
 button{
     position:relative;
     font-family:"Trebuchet MS 2", "Trebuchet MS";
+    border-style:solid;
+    border-color:white;
+    border-width:.5vw;
 }
 img{
     overflow: hidden;

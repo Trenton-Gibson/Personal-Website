@@ -6,7 +6,7 @@
     z-index:2;
     display: grid;
     position: relative;
-    grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(33vw, 1fr));
     padding:9vw 0;
     /*background:linear-gradient(black, #350E56);*/
     background:rgb(45, 45, 45);
@@ -100,6 +100,13 @@
         display:grid;
     }
     .logo-container{
-        display:none;
+        display:grid;
+        grid-row:1;
+        grid-column:2;
+    }
+    img.logo-container{
+        justify-self: center;
+        align-self: center;
+        border-radius: 2vw;
     }
 }
