@@ -8,7 +8,6 @@
     position: relative;
     grid-template-columns: repeat(auto-fit, minmax(33vw, 1fr));
     padding:9vw 0;
-    /*background:linear-gradient(black, #350E56);*/
     background:rgb(45, 45, 45);
     .my-links-container{
         margin-right:auto;
@@ -61,7 +60,6 @@
             margin:0 0;
             padding-bottom:8vw;
             align-self:center;
-            justify-self:center;
             text-align:center;
         }
         #github-link{
@@ -100,13 +98,8 @@
         display:grid;
     }
     .logo-container{
-        display:grid;
-        grid-row:1;
-        grid-column:2;
+        display:none;
     }
     img.logo-container{
-        justify-self: center;
-        align-self: center;
-        border-radius: 2vw;
     }
 }

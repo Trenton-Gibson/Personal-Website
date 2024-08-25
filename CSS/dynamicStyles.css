@@ -1,63 +1,47 @@
-@media only screen and (min-width: 601px){
-    .about-container-image-circuts{
-        height:40em;
-        #about-image-circuts{
-            height:100%;
-            width:100%;
-            object-fit:fill;
-        }
-    }
-    .topNavBar{
-        height:4em;
-    }
-    .top-navbar-home-link{
-        font-size:1.6em;
-    }
-    .top-navbar-links-container{
-        padding: 1.5em 0;
-        grid-column:auto/span 2;
-        justify-self:right;
-        margin-top: 1vw;
-        align-self:center;
-        a.top-navbar-links-container{
-            font-family:monospace;
-            color: #8001FE;
-            font-size:2.2em;
-            padding:2.2em;
-            margin: 0;
-        }
-        a.top-navbar-links-container:hover{
-            transition: 0.5s ease;
-            color:white;
-        }
-    }
-    #grey-hamburger-bttn{
-        display:none;
-    }
-    #purple-hamburger-bttn{
-        display:none;
-    }
-    .top-navbar-links-container{
-        display:grid;
-    }
-    .myPortfolio{
-        display:grid;
-        width:100vw;
-        grid-template-columns: repeat(auto-fit, minmax(33.3vw, 1fr));
-        #heading-my-portfolio{
-            grid-column: auto / span 3;
-        }
-    }
+/*Written 8/22/2024: The CSS for
+mobile will display up to 550px.
+The CSS for tablets will display
+1000 px.*/
+@media only screen and (min-width: 551px){
     #bottomNavBar{
-        .logo-container{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            img.logo-container{
-                width:14vw;
-                height:17vw;
-                border-radius:1vw;
+        padding:5vw 0;
+        .my-links-container{
+            #my-links-heading{
+                font-size:6vw;
+                margin-bottom:3vw;
             }
+            a.my-links-container{
+                font-size:3.4vw;
+            }
+        }
+        .on-the-web-container{
+            h3.on-the-web-container{
+                font-size: 6.5vw;
+                padding-bottom:0;
+            }
+            #normal-linkedin-logo{
+                height:14vw;
+            }
+            #purple-linkedin-logo{
+                height:14vw;
+            }
+            #normal-github-logo{
+                height:14vw;
+            }
+            #purple-github-logo{
+                height:14vw;
+            }
+        }
+        .logo-container{
+            display:grid;
+            grid-row:1;
+            grid-column:2;
+        }
+        img.logo-container{
+            align-self: center;
+            border-radius: 2vw;
+            height: 26vw;
+            width: 20vw;
         }
     }
 }
