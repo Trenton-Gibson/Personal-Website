@@ -3,6 +3,7 @@ mobile will display up to 550px.
 The CSS for tablets will display
 1000 px.*/
 @media only screen and (min-width: 551px){
+    /*Styles for the bottom nav bar*/
     #bottomNavBar{
         padding:5vw 0;
         .my-links-container{
@@ -42,6 +43,325 @@ The CSS for tablets will display
             border-radius: 2vw;
             height: 26vw;
             width: 20vw;
+        }
+    }
+    /*Styles for the container containing my portfolio*/
+    .myPortfolio{
+        grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+        #heading-my-portfolio{
+            grid-column: auto / span 2;
+            font-size:9vw;
+            width:58vw;
+            height:11vw;
+        }
+        /*Styles related to the Personal Finance Manager container.*/
+        .personalFinanceManager{
+            #img-personal-finance-manager{
+                border-radius: 12vw;
+                width:42vw;
+            }
+            #financeHoverEffect{
+                position:absolute;
+                width:48vw;
+                height:49.4vw;
+                opacity:0;
+                transition: 0.5s ease;
+                justify-self:center;
+                border-radius: 12vw;
+            }
+        }
+        .personalWebsite{
+            #img-personal-website{
+                border-radius: 12vw;
+                width:42vw;
+            }
+            #personalWebsiteHoverEffect{
+                position:absolute;
+                width:48vw;
+                height:49.4vw;
+                opacity:0;
+                transition: 0.5s ease;
+                justify-self:center;
+                border-radius: 12vw;
+            }
+        }
+        .carbonesMarketingSystem{
+            #img-carbones-logo{
+                border-radius: 12vw;
+                height:42vw;
+                width:42vw;
+            }
+            #carbonesHoverEffect{
+                position:absolute;
+                width:48vw;
+                height:49.4vw;
+                opacity:0;
+                transition: 0.5s ease;
+                justify-self:center;
+                border-radius: 12vw;
+            }
+        }
+    }
+    /*Styles for the Personal Finance Manager Popup*/
+    .pop-up-personal-finance-manager{
+        display:block;
+        z-index: 3;
+        position: fixed;
+        overflow: auto;
+        width:100%;
+        height:0;
+        left: 0;
+        top: 0;
+        transition:height .75s ease-in-out;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        .pop-up-finance-content {
+            width:80%;
+            height: auto;
+            margin: 15% auto;
+            background-color: white;
+            box-sizing: border-box;
+            border: 1.6vw solid;
+            border-radius: 6vw;
+            border-color: #7800B1FF;
+            #pop-up-finance-close-button{
+                float:right;
+                margin: 1.35vw 3vw;
+                background:rgba(0,0,0,0);
+                border-radius:1.5vw;
+                border-color:lightslategrey;
+                color:#7800B1FF;
+                font-size:4.4vw;
+                padding:1vw 1.5vw;
+            }
+            #pop-up-finance-close-button:hover{
+                transition:.5s ease;
+                color:white;
+                background:#7800B1FF;
+            }
+            #image-personal-finance-manager{
+                display:block;
+                width:77vw;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            #text-personal-finance-manager{
+                padding:5vw;
+            }
+            a.pop-up-finance-content{
+                font-size:4vw;
+                padding:2vw;
+                margin-left:3vw;
+                color:black;
+                margin-bottom:.8vw;
+                border:0;
+                background:none;
+            }
+            a.pop-up-finance-content:hover{
+                transition: 0.5s ease;
+                color:#7800B1FF;
+                text-decoration-color:#7800B1FF;
+            }
+            #heading-personal-finance-manager{
+                text-align:center;
+                font-size:9vw;
+            }
+        }
+    }
+
+    /*Styles for the Personal Website Popup*/
+    .pop-up-personal-website{
+        display:block;
+        z-index: 3;
+        position: fixed;
+        overflow: auto;
+        width:100%;
+        height:0;
+        left: 0;
+        top: 0;
+        transition:height .75s ease-in-out;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        .pop-up-personal-website-content{
+            width:80%;
+            height: auto;
+            margin: 15% auto;
+            background-color: white;
+            box-sizing: border-box;
+            border: 1.6vw solid;
+            border-radius: 6vw;
+            border-color: #7800B1FF;
+            #image-personal-website{
+                display:block;
+                width:77vw;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            #heading-personal-website{
+                text-align:center;
+                font-size:9vw;
+            }
+            #pop-up-personal-website-close-button{
+                float:right;
+                margin: 1.35vw 3vw;
+                background:rgba(0,0,0,0);
+                border-radius:1.5vw;
+                border-color:lightslategrey;
+                color:#7800B1FF;
+                font-size:4.4vw;
+                padding:1vw 1.5vw;
+            }
+            #pop-up-personal-website-close-button:hover{
+                transition:.5s ease;
+                color:white;
+                background:#7800B1FF;
+            }
+            a.pop-up-personal-website-content{
+                font-size:4vw;
+                padding:2vw;
+                margin-left:3vw;
+                color:black;
+                margin-bottom:.8vw;
+                border:0;
+                background:none;
+            }
+            a.pop-up-personal-website-content:hover{
+                transition: 0.5s ease;
+                color:#7800B1FF;
+                text-decoration-color:#7800B1FF;
+            }
+            #text-personal-website{
+                padding:5vw;
+            }
+        }
+    }
+
+    /*Styles for the Carbone's Website Popup*/
+    .pop-up-carbones-website{
+        display:block;
+        z-index: 3;
+        position: fixed;
+        overflow: auto;
+        width:100%;
+        height:0;
+        left: 0;
+        top: 0;
+        transition:height .75s ease-in-out;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        .pop-up-carbones-website-content {
+            width:80%;
+            height: auto;
+            margin: 15% auto;
+            background-color: white;
+            box-sizing: border-box;
+            border: 1.6vw solid;
+            border-radius: 6vw;
+            border-color: #7800B1FF;
+            #pop-up-carbones-website-close-button{
+                float:right;
+                margin: 1.35vw 3vw;
+                background:rgba(0,0,0,0);
+                border-radius:1.5vw;
+                border-color:lightslategrey;
+                color:#7800B1FF;
+                font-size:4.4vw;
+                padding:1vw 1.5vw;
+            }
+            #pop-up-carbones-website-close-button:hover{
+                transition:.5s ease;
+                color:white;
+                background:#7800B1FF;
+            }
+            #image-carbones-website{
+                display:block;
+                width:77vw;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            #pop-up-carbones-website-text{
+                padding:5vw;
+            }
+
+            h3.carbonesMarketingSystem{
+                text-align:center;
+                font-size:9vw;
+                padding:0 5vw;
+            }
+            a.pop-up-carbones-website-content{
+                font-size:4vw;
+                padding:2vw;
+                margin-left:3vw;
+                color:black;
+                margin-bottom:.8vw;
+                border:0;
+                background:none;
+            }
+            a.pop-up-carbones-website-content:hover{
+                transition: 0.5s ease;
+                color:#7800B1FF;
+                text-decoration-color:#7800B1FF;
+            }
+        }
+    }
+    /*Styles for the top navbar*/
+    .topNavBar{
+        overflow:hidden;
+        position: fixed;
+        width:100%;
+        z-index:4;
+        height:13vw;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+        background:rgb(45, 45, 45);
+        .top-navbar-links-container{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(33vw, 1fr));
+        }
+        #purple-hamburger-bttn{
+            display:none
+        }
+        .hamburger-bttn{
+            display:none;
+        }
+    }
+    .dropdown-menu{
+        overflow:visible;
+        position: fixed;
+        display:block;
+        width: 100%;
+        height:0%;
+        justify-content:center;
+        transition:height .5s ease-in-out;
+        z-index:3;
+    }
+    .dropdown-links-container{
+        display:grid;
+        height:0;
+    }
+    .dropdown-links{
+        margin-bottom:5vw;
+        padding: 0 5vw;
+        font-size: 0;
+        /*JavaScript lessens transition time when*/
+        /*closing dropdown menu*/
+        transition:font-size 1.2s ease-in-out;
+    }
+    .dropdown-links:hover{
+        transition: 0.5s ease;
+        color:white;
+    }
+    #dropdown-my-portfolio-link{
+        margin-top:50vw;
+    }
+    .top-navbar-home-link{
+        margin: 2vw;
+        color:white;
+        font-size:4.7vw;
+        align-self:center;
+        a.top-navbar-home-link:hover{
+            transition: 0.5s ease;
+            color:#7800B1FF;
         }
     }
 }
