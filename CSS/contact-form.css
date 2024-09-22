@@ -38,37 +38,6 @@
             border-radius:6vw;
             font-size:3vw;
         }
-        /*.wrap {*/
-        /*    position: relative;*/
-        /*    display: flex;*/
-        /*    width: 80%;*/
-        /*}    */
-        /*.wrap:after {*/
-        /*    content:"";*/
-        /*    border-top: 20px solid black;*/
-        /*    border-left: 20px solid transparent;*/
-        /*    border-right: 20px solid transparent;*/
-        /*    -webkit-transform: rotate(-45deg);*/
-        /*    z-index: 1;*/
-        /*    opacity: 0.5;*/
-        /*    position: absolute;*/
-        /*    right: -18px;*/
-        /*    bottom: -3px;*/
-        /*    pointer-events: none;*/
-        /*}*/
-        /*.pull-tab {*/
-        /*    height: 0px;*/
-        /*    width: 0px;*/
-        /*    border-top: 20px solid cyan;*/
-        /*    border-left: 20px solid transparent;*/
-        /*    border-right: 20px solid transparent;*/
-        /*    -webkit-transform: rotate(-45deg);*/
-        /*    position: absolute;*/
-        /*    bottom: 0px;*/
-        /*    right: -15px;*/
-        /*    pointer-events: none;*/
-        /*    z-index: 2;*/
-        /*}*/
         #name{
 
         }
