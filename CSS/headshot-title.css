@@ -66,7 +66,7 @@
         display:grid;
         #myHeadshot{
             height: 68vw;
-            width:59vw;
+            width:50vw;
             object-fit: cover;
             border:solid;
             border-color:white;
