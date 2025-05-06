@@ -1,0 +1,546 @@
+/*Written 11/9/2024: The CSS for
+mobile will display up to 550 px.
+The CSS for tablets set vertically
+will display up to 750 px. The CSS
+for tablets turned horizontally will
+display up to 1000 px.*/
+@media only screen and (min-width: 751px){
+    /*Styles for the bottom nav bar*/
+    #bottomNavBar{
+        padding:3vw 0;
+        .my-links-container{
+            #my-links-heading{
+                font-size:5vw;
+                margin-bottom:1.5vw;
+            }
+            a.my-links-container{
+                font-size:2.75vw;
+                padding-bottom:1vw;
+            }
+        }
+        .on-the-web-container{
+            h3.on-the-web-container{
+                font-size: 5vw;
+                padding-bottom:0;
+                /* margin-bottom:5vw; */
+            }
+            #normal-linkedin-logo{
+                height:14vw;
+            }
+            #purple-linkedin-logo{
+                height:14vw;
+            }
+            #normal-github-logo{
+                height:14vw;
+            }
+            #purple-github-logo{
+                height:14vw;
+            }
+        }
+        .logo-container{
+            display:grid;
+            grid-row:1;
+            grid-column:2;
+        }
+        img.logo-container{
+            align-self: center;
+            border-radius: 2vw;
+            height: 26vw;
+            width: 20vw;
+        }
+    }
+    /*Styles for the container containing my portfolio*/
+    .myPortfolio{
+        padding: 4vw 0;
+        grid-template-columns: repeat(auto-fit, minmax(48vw, 1fr));
+        grid-gap:2vw;
+        #heading-my-portfolio{
+            grid-column: auto / span 2;
+            font-size:7vw;
+            width:58vw;
+            height:9vw;
+        }
+        /*Styles related to the Personal Finance Manager container.*/
+        .personalFinanceManager{
+            justify-content: right;
+            #img-personal-finance-manager{
+                border-radius: 7vw;
+                width:30vw;
+            }
+            #financeHoverEffect{
+                position:absolute;
+                width:27vw;
+                height:49.4vw;
+                opacity:0;
+                transition: 0.5s ease;
+                justify-self:center;
+                border-radius: 12vw;
+            }
+        }
+        .personalWebsite{
+            justify-content: left;
+            #img-personal-website{
+                border-radius: 7vw;
+                width:30vw;
+            }
+            #personalWebsiteHoverEffect{
+                position:absolute;
+                width:48vw;
+                height:49.4vw;
+                opacity:0;
+                transition: 0.5s ease;
+                justify-self:center;
+                border-radius: 12vw;
+            }
+        }
+        .carbonesMarketingSystem{
+            justify-content: right;
+            #img-carbones-logo{
+                border-radius: 7vw;
+                height:30vw;
+                width:30vw;
+            }
+            #carbonesHoverEffect{
+                position:absolute;
+                width:48vw;
+                height:49.4vw;
+                opacity:0;
+                transition: 0.5s ease;
+                justify-self:center;
+                border-radius: 12vw;
+            }
+        }
+    }
+    /*Styles for the Personal Finance Manager Popup*/
+    .pop-up-personal-finance-manager{
+        display:block;
+        z-index: 3;
+        position: fixed;
+        overflow: auto;
+        width:100%;
+        height:0;
+        left: 0;
+        top: 0;
+        transition:height .75s ease-in-out;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        .pop-up-finance-content {
+            width:80%;
+            height: auto;
+            margin: 15% auto;
+            background-color: white;
+            box-sizing: border-box;
+            border: 1.6vw solid;
+            border-radius: 6vw;
+            border-color: #7800B1FF;
+            #pop-up-finance-close-button{
+                float:right;
+                margin: 1.35vw 3vw;
+                background:rgba(0,0,0,0);
+                border-radius:1.5vw;
+                border-color:lightslategrey;
+                color:#7800B1FF;
+                font-size:4.4vw;
+                padding:1vw 1.5vw;
+            }
+            #pop-up-finance-close-button:hover{
+                transition:.5s ease;
+                color:white;
+                background:#7800B1FF;
+            }
+            #image-personal-finance-manager{
+                display:block;
+                width:77vw;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            #text-personal-finance-manager{
+                padding:5vw;
+            }
+            a.pop-up-finance-content{
+                font-size:4vw;
+                padding:2vw;
+                margin-left:3vw;
+                color:black;
+                margin-bottom:.8vw;
+                border:0;
+                background:none;
+            }
+            a.pop-up-finance-content:hover{
+                transition: 0.5s ease;
+                color:#7800B1FF;
+                text-decoration-color:#7800B1FF;
+            }
+            #heading-personal-finance-manager{
+                text-align:center;
+                font-size:9vw;
+            }
+        }
+    }
+
+    /*Styles for the Personal Website Popup*/
+    .pop-up-personal-website{
+        display:block;
+        z-index: 3;
+        position: fixed;
+        overflow: auto;
+        width:100%;
+        height:0;
+        left: 0;
+        top: 0;
+        transition:height .75s ease-in-out;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        .pop-up-personal-website-content{
+            width:80%;
+            height: auto;
+            margin: 15% auto;
+            background-color: white;
+            box-sizing: border-box;
+            border: 1.6vw solid;
+            border-radius: 6vw;
+            border-color: #7800B1FF;
+            #image-personal-website{
+                display:block;
+                width:77vw;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            #heading-personal-website{
+                text-align:center;
+                font-size:9vw;
+            }
+            #pop-up-personal-website-close-button{
+                float:right;
+                margin: 1.35vw 3vw;
+                background:rgba(0,0,0,0);
+                border-radius:1.5vw;
+                border-color:lightslategrey;
+                color:#7800B1FF;
+                font-size:4.4vw;
+                padding:1vw 1.5vw;
+            }
+            #pop-up-personal-website-close-button:hover{
+                transition:.5s ease;
+                color:white;
+                background:#7800B1FF;
+            }
+            a.pop-up-personal-website-content{
+                font-size:4vw;
+                padding:2vw;
+                margin-left:3vw;
+                color:black;
+                margin-bottom:.8vw;
+                border:0;
+                background:none;
+            }
+            a.pop-up-personal-website-content:hover{
+                transition: 0.5s ease;
+                color:#7800B1FF;
+                text-decoration-color:#7800B1FF;
+            }
+            #text-personal-website{
+                padding:5vw;
+            }
+        }
+    }
+
+    /*Styles for the Carbone's Website Popup*/
+    .pop-up-carbones-website{
+        display:block;
+        z-index: 3;
+        position: fixed;
+        overflow: auto;
+        width:100%;
+        height:0;
+        left: 0;
+        top: 0;
+        transition:height .75s ease-in-out;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        .pop-up-carbones-website-content {
+            width:80%;
+            height: auto;
+            margin: 15% auto;
+            background-color: white;
+            box-sizing: border-box;
+            border: 1.6vw solid;
+            border-radius: 6vw;
+            border-color: #7800B1FF;
+            #pop-up-carbones-website-close-button{
+                float:right;
+                margin: 1.35vw 3vw;
+                background:rgba(0,0,0,0);
+                border-radius:1.5vw;
+                border-color:lightslategrey;
+                color:#7800B1FF;
+                font-size:4.4vw;
+                padding:1vw 1.5vw;
+            }
+            #pop-up-carbones-website-close-button:hover{
+                transition:.5s ease;
+                color:white;
+                background:#7800B1FF;
+            }
+            #image-carbones-website{
+                display:block;
+                width:77vw;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            #pop-up-carbones-website-text{
+                padding:5vw;
+            }
+
+            h3.carbonesMarketingSystem{
+                text-align:center;
+                font-size:9vw;
+                padding:0 5vw;
+            }
+            a.pop-up-carbones-website-content{
+                font-size:4vw;
+                padding:2vw;
+                margin-left:3vw;
+                color:black;
+                margin-bottom:.8vw;
+                border:0;
+                background:none;
+            }
+            a.pop-up-carbones-website-content:hover{
+                transition: 0.5s ease;
+                color:#7800B1FF;
+                text-decoration-color:#7800B1FF;
+            }
+        }
+    }
+    /*Styles for the top navbar*/
+    .topNavBar{
+        overflow:hidden;
+        position: fixed;
+        width:100%;
+        z-index:4;
+        height:9vw;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+        background:rgb(45, 45, 45);
+        .top-navbar-links-container{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(16vw, 1fr));
+            align-items:center;
+            justify-content: center;
+            font-size:3vw;
+            text-align:center;
+        }
+        #purple-hamburger-bttn{
+            display:none
+        }
+        .hamburger-bttn{
+            display:none;
+        }
+    }
+    .dropdown-menu{
+        overflow:visible;
+        position: fixed;
+        display:block;
+        width: 100%;
+        height:0%;
+        justify-content:center;
+        transition:height .5s ease-in-out;
+        z-index:3;
+    }
+    .dropdown-links-container{
+        display:grid;
+        height:0;
+    }
+    .dropdown-links{
+        margin-bottom:5vw;
+        padding: 0 5vw;
+        font-size: 0;
+        /*JavaScript lessens transition time when*/
+        /*closing dropdown menu*/
+        transition:font-size 1.2s ease-in-out;
+    }
+    .dropdown-links:hover{
+        transition: 0.5s ease;
+        color:white;
+    }
+    #dropdown-my-portfolio-link{
+        margin-top:50vw;
+    }
+    .top-navbar-home-link{
+        margin: 2vw;
+        color:white;
+        font-size:3.7vw;
+        align-self:center;
+        margin-top:1.5vw;
+        a.top-navbar-home-link:hover{
+            transition: 0.5s ease;
+            color:#7800B1FF;
+        }
+    }
+    #contact-link{
+        padding-right:4vw;
+    }
+    /*Styles for the About container*/
+    .about{
+        display:grid;
+        grid-gap:2vw;
+        position:relative;
+        grid-template-columns: repeat(auto-fit, minmax(48vw,1fr));
+        .about-container-text{
+            padding:2vw 0;
+        }
+        #heading-about{
+            font-size:6vw;
+            width: 35vw;
+            margin: 0 4vw;
+        }
+        #about-text{
+            color:white;
+            padding-top:3vw;
+            margin:0 2vw;
+            font-size:2.5vw;
+        }
+        .about-container-image-circuts{
+            display:block;
+            #about-image-circuts{
+                width:100%;
+                height:60vw;
+                object-fit: fill;
+            }            
+        }
+    }
+    /*Styles for Contact container*/
+    .contact{
+        width:70vw;
+        padding: 6vw 0vw;
+        margin-right:auto;
+        margin-left:auto;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        .contact-form{
+            align-items:center;
+            justify-content:center;
+            background: #7800B1FF;
+            border-radius:5vw;
+            display: flex;
+            flex-direction:column;
+            width:80%;
+            padding: 0 0;
+            #heading-contact{
+                font-size:7vw;
+                padding:1vw;
+                color:white;
+            }
+            input.contact-form, textarea.contact-form{
+                margin:1.75vw 0 ;
+                padding: .75vw 1vw;
+                background:white;
+                font-size:1.75vw;
+            }
+            textarea.contact-form{
+                resize: vertical;
+            }
+            #contact-button{
+                margin:2vw 0;
+                padding:2vw;
+                background:rgb(45, 45, 45);
+                color:white;
+                border-radius:6vw;
+                font-size:1.75vw;
+            }
+            #name{
+
+            }
+            #email{
+
+            }
+            #phone{
+
+            }
+            #message{
+
+            }
+        }
+    }
+    .headshot-title {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        position: relative;
+        background: #7800B1FF;
+        height: 70vw;
+        grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+        padding-top:2vw;
+        /*Styles for text next to my headshot*/
+        .self-description-headers {
+            grid-row: 1;
+            display:grid;
+            align-self:center;
+            grid-column:span 2;
+            .descriptors {
+                font-size: 6.7vw;
+                margin-left:2vw;
+                p.descriptors {
+                    margin: 4.9vw 0;
+                    color: white;
+                    background-color: rgb(45, 45, 45);
+                    border-radius:4vw;
+                }
+                #descriptor-analyst {
+                    margin-left:0;
+                    width:30vw;
+                    text-align:center;
+                }
+                #descriptor-designer {
+                    /* margin-left:5vw; */
+                    width:33vw;
+                    text-align:center;
+                    color: rgb(45, 45, 45);
+                    background-color: white;
+                }
+                #descriptor-programmer {
+                    /* margin-left:10vw; */
+                    width: 40vw;
+                    text-align:center;
+                }
+            }
+        }
+        .name-container{
+            height:20vw;
+            padding-top:8vw;
+            margin-left:2vw;
+            display:grid;
+            align-content:center;
+        }
+        .name{
+            text-align:center;
+            color:white;
+            font-size:7.5vw;
+            background:rgb(45, 45, 45);
+            border-radius:5vw;
+            width:35vw;
+            font-weight:bold;
+        }
+        /*Styles for headshot*/
+        .headshot-below-headers{
+            grid-column:span 3;
+            padding-top:12vw;
+            grid-row: 1;
+            height:33vw;
+            display:grid;
+            #myHeadshot{
+                height: 54vw;
+                width:48vw;
+                object-fit: cover;
+                border:solid;
+                border-color:white;
+                border-radius: 10vw 0 0 10vw;
+                margin-left:auto;
+                border-right:none;
+                border-width:1vw;
+            }
+        }
+    }
+}
