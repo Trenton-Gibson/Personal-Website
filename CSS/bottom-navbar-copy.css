@@ -1,0 +1,105 @@
+/*Styles for the bottom navbar*/
+#bottomNavBar{
+    overflow:hidden;
+    width:100%;
+    top:0;
+    z-index:2;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(33vw, 1fr));
+    padding:9vw 0;
+    background:rgb(45, 45, 45);
+    .my-links-container{
+        margin-right:auto;
+        margin-left:auto;
+        display:grid;
+        align-items:center;
+        justify-content:center;
+        text-decoration-color:white;
+        color:white;
+        a.my-links-container{
+            font-size:5vw;
+            padding-bottom:1.75vw;
+        }
+        a.my-links-container:hover{
+            transition: 0.5s ease;
+            color:#7800B1FF;
+            text-decoration-color:#7800B1FF;
+        }
+        #my-links-heading{
+            font-size:9vw;
+            margin:0 0;
+            margin-bottom:5vw;
+            grid-row:1;
+            text-align:center;
+            color:#7800B1FF;
+        }
+        #bot-navbar-home-link{
+            grid-row:2;
+        }
+        #bot-navbar-my-portfolio-link{
+            grid-row:3;
+        }
+        #bot-navbar-about-link{
+            grid-row:4;
+        }
+        #bot-navbar-contact-link{
+            grid-row:5;
+        }
+    }
+
+    .on-the-web-container{
+        display:grid;
+        grid-gap: 0;
+        a.on-the-web-container{
+            grid-row:2;
+        }
+        h3.on-the-web-container{
+            grid-column: auto/span 2;
+            font-size: 9.5vw;
+            margin:0 0;
+            padding-bottom:8vw;
+            align-self:center;
+            text-align:center;
+        }
+        #github-link{
+            margin-right:auto;
+            align-self:center;
+        }
+        #normal-github-logo{
+            height:19vw;
+        }
+        #normal-linkedin-logo{
+            height:19vw;
+        }
+        #purple-github-logo{
+            height:19vw;
+            display:none;
+        }
+        #linked-in-link{
+            margin-left:auto;
+            align-self:center;
+        }
+        #purple-linkedin-logo{
+            height:19vw;
+            display:none;
+        }
+    }
+    #linked-in-link:hover #normal-linkedin-logo{
+        display:none;
+    }
+    #linked-in-link:hover #purple-linkedin-logo{
+        display:grid;
+    }
+    #github-link:hover #normal-github-logo{
+        display:none;
+    }
+    #github-link:hover #purple-github-logo{
+        display:grid;
+    }
+    .logo-container{
+        display:none;
+    }
+    img.logo-container{
+    }
+}

@@ -1,0 +1,26 @@
+/*Styles for the About container*/
+.about{
+    background:#7800B1FF;
+    display: grid;
+    position: relative;
+    #heading-about{
+        font-size:12vw;
+        text-align:center;
+        margin:0 17vw;
+        padding:1vw;
+        background-color:white;
+        border-radius:11vw;
+    }
+    .about-container-text{
+        padding:7vw 0;
+    }
+    #about-text{
+        color:white;
+        padding-top:7vw;
+        margin:0 6vw;
+        font-size:3.9vw;
+    }
+    .about-container-image-circuts{
+        display:none;
+    }
+}
