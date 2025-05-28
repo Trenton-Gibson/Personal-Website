@@ -4,7 +4,7 @@ The CSS for tablets set vertically
 will display up to 750 px. The CSS
 for tablets turned horizontally will
 display up to 1000 px.*/
-@media only screen and (min-width: 551px){
+@media only screen and (min-width: 551px) and (max-width:750px){
     /*Styles for the bottom nav bar*/
     #bottomNavBar{
         padding:5vw 0;

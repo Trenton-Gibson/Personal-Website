@@ -4,7 +4,7 @@ The CSS for tablets set vertically
 will display up to 750 px. The CSS
 for tablets turned horizontally will
 display up to 1000 px.*/
-@media only screen and (min-width: 751px){
+@media only screen and (min-width: 751px) and (max-width:1000px){
     /*Styles for the bottom nav bar*/
     #bottomNavBar{
         padding:3vw 0;
@@ -125,7 +125,7 @@ display up to 1000 px.*/
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.4);
         .pop-up-finance-content {
-            width:80%;
+            width: 70%;
             height: auto;
             margin: 15% auto;
             background-color: white;
@@ -135,13 +135,13 @@ display up to 1000 px.*/
             border-color: #7800B1FF;
             #pop-up-finance-close-button{
                 float:right;
-                margin: 1.35vw 3vw;
+                margin: 1.35vw 2.25vw;
                 background:rgba(0,0,0,0);
                 border-radius:1.5vw;
                 border-color:lightslategrey;
                 color:#7800B1FF;
-                font-size:4.4vw;
-                padding:1vw 1.5vw;
+                font-size:2.5vw;
+                padding:.5vw 1vw;
             }
             #pop-up-finance-close-button:hover{
                 transition:.5s ease;
@@ -150,15 +150,16 @@ display up to 1000 px.*/
             }
             #image-personal-finance-manager{
                 display:block;
-                width:77vw;
+                width:100%;
                 margin-right:auto;
                 margin-left:auto;
             }
             #text-personal-finance-manager{
-                padding:5vw;
+                padding:3vw;
+                font-size:2.5vw;
             }
             a.pop-up-finance-content{
-                font-size:4vw;
+                font-size:2.5vw;
                 padding:2vw;
                 margin-left:3vw;
                 color:black;
@@ -173,7 +174,8 @@ display up to 1000 px.*/
             }
             #heading-personal-finance-manager{
                 text-align:center;
-                font-size:9vw;
+                font-size:5vw;
+                margin-left:1vw;
             }
         }
     }
@@ -192,7 +194,7 @@ display up to 1000 px.*/
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.4);
         .pop-up-personal-website-content{
-            width:80%;
+            width:70%;
             height: auto;
             margin: 15% auto;
             background-color: white;
@@ -202,23 +204,24 @@ display up to 1000 px.*/
             border-color: #7800B1FF;
             #image-personal-website{
                 display:block;
-                width:77vw;
+                width:100%;
                 margin-right:auto;
                 margin-left:auto;
             }
             #heading-personal-website{
                 text-align:center;
-                font-size:9vw;
+                font-size:5vw;
+                margin-left:6vw;
             }
             #pop-up-personal-website-close-button{
                 float:right;
-                margin: 1.35vw 3vw;
+                margin: 1.35vw 2vw;
                 background:rgba(0,0,0,0);
                 border-radius:1.5vw;
                 border-color:lightslategrey;
                 color:#7800B1FF;
-                font-size:4.4vw;
-                padding:1vw 1.5vw;
+                font-size:2.5vw;
+                padding:.5vw 1vw;
             }
             #pop-up-personal-website-close-button:hover{
                 transition:.5s ease;
@@ -226,7 +229,7 @@ display up to 1000 px.*/
                 background:#7800B1FF;
             }
             a.pop-up-personal-website-content{
-                font-size:4vw;
+                font-size:3vw;
                 padding:2vw;
                 margin-left:3vw;
                 color:black;
@@ -241,6 +244,7 @@ display up to 1000 px.*/
             }
             #text-personal-website{
                 padding:5vw;
+                font-size:2.5vw;
             }
         }
     }
@@ -259,7 +263,7 @@ display up to 1000 px.*/
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.4);
         .pop-up-carbones-website-content {
-            width:80%;
+            width:70%;
             height: auto;
             margin: 15% auto;
             background-color: white;
@@ -274,8 +278,8 @@ display up to 1000 px.*/
                 border-radius:1.5vw;
                 border-color:lightslategrey;
                 color:#7800B1FF;
-                font-size:4.4vw;
-                padding:1vw 1.5vw;
+                font-size:3vw;
+                padding:.5vw 1vw;
             }
             #pop-up-carbones-website-close-button:hover{
                 transition:.5s ease;
@@ -284,21 +288,22 @@ display up to 1000 px.*/
             }
             #image-carbones-website{
                 display:block;
-                width:77vw;
+                width:100%;
                 margin-right:auto;
                 margin-left:auto;
             }
             #pop-up-carbones-website-text{
+                font-size:2.5vw;
                 padding:5vw;
             }
 
             h3.carbonesMarketingSystem{
                 text-align:center;
-                font-size:9vw;
-                padding:0 5vw;
+                font-size:5vw;
+                padding:0 10vw;
             }
             a.pop-up-carbones-website-content{
-                font-size:4vw;
+                font-size:2.5vw;
                 padding:2vw;
                 margin-left:3vw;
                 color:black;
