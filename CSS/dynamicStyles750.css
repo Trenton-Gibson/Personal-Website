@@ -410,9 +410,16 @@ display up to 1000 px.*/
             display:block;
             #about-image-circuts{
                 width:100%;
-                height:60vw;
+                height:100%;
                 object-fit: fill;
-            }            
+            }  
+            #photo_credit{
+                color: white;
+                position: absolute;
+                z-index: 1;
+                top: 66vw;
+                font-size: 2vw;
+            }          
         }
     }
     /*Styles for Contact container*/
