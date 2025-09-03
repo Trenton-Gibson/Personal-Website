@@ -58,6 +58,8 @@ display up to 1000 px.*/
         grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
         grid-gap:2vw;
         width:100%;
+        background: center / contain no-repeat url(../Images/wavy-black-white-background.jpg);
+        background-size: 100vw auto;
         #heading-my-portfolio{
             grid-column: auto / span 3;
             font-size:5vw;
@@ -524,7 +526,7 @@ display up to 1000 px.*/
         margin-right: auto;
         display: grid;
         position: relative;
-        background: center / contain url("../Images/purple_topographic_map.png");
+        background: center / contain url(../Images/wavy-black-white-background.jpg);
         height: 48vw;
         grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
         padding-top:2vw;
