@@ -4,7 +4,7 @@
     margin-right: auto;
     display: grid;
     position: relative;
-    background: #7800B1FF;
+    background: center / contain url("../Images/purple_topographic_map.png");
     height: 84vw;
     grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
     padding-top:3vw;
