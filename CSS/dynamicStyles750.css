@@ -481,7 +481,6 @@ display up to 1000 px.*/
         margin-right: auto;
         display: grid;
         position: relative;
-        background: center / contain url("../Images/purple_topographic_map.png");
         height: 70vw;
         grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
         padding-top:2vw;

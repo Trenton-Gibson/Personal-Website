@@ -1,4 +1,8 @@
 /*Styles for Contact container*/
+.contact-background{
+            background: center / contain no-repeat url(../Images/white_waves.jpg);
+            background-size: 100vw 100%;
+        }
 .contact{
     width:92vw;
     padding: 12vw 0vw;

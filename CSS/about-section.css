@@ -1,6 +1,7 @@
 /*Styles for the About container*/
 .about{
-    background:#7800B1FF;
+    background: center / contain no-repeat url(../Images/topographic_wave_map.jpg);
+    background-size: 100vw 100%;
     display: grid;
     position: relative;
     #heading-about{

@@ -2,7 +2,8 @@
 .myPortfolio{
     display:grid;
     width:100vw;
-    background-color:white;
+    background: center / contain no-repeat url(../Images/white_waves.jpg);
+    background-size: 100vw 100%;
     padding:8vw 0;
     position: relative;
     grid-gap:3vw 0;

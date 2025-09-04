@@ -4,7 +4,8 @@
     margin-right: auto;
     display: grid;
     position: relative;
-    background: center / contain url("../Images/purple_topographic_map.png");
+    background: center / contain no-repeat url(../Images/topographic_wave_map.jpg);
+    background-size: 100vw 100%;
     height: 84vw;
     grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
     padding-top:3vw;
