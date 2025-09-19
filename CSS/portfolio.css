@@ -28,13 +28,21 @@
         align-content: center;
         justify-content: center;
         #img-personal-finance-manager{
+            /* position:absolute; */
+            justify-self:right;
             border-radius: 12vw;
             width:48vw;
             border: solid;
             border-color: black;
         }
+        #heading-finance-manager-button{
+            justify-self: center;
+            text-decoration:underline;
+            margin: .5vw 0;
+        }
         #financeHoverEffect{
             position:absolute;
+            top:2.5vw;
             width:48vw;
             height:49.4vw;
             opacity:0;
@@ -59,12 +67,18 @@
         }
         #personalWebsiteHoverEffect{
             position:absolute;
+            top: 2.5vw;
             width:48vw;
             height:49.4vw;
             opacity:0;
             transition: 0.5s ease;
             justify-self:center;
             border-radius: 12vw;
+        }
+        #heading-personal-website-button{
+            justify-self: center;
+            text-decoration:underline;
+            margin: .5vw 0;
         }
     }
     #personalWebsiteHoverEffect:hover {
@@ -82,15 +96,22 @@
             object-fit: scale-down;
             border: solid;
             border-color: black;
+            background: white;
         }
         #carbonesHoverEffect{
             position:absolute;
+            top: 2.5vw;
             width:48vw;
             height:49.4vw;
             opacity:0;
             transition: 0.5s ease;
             justify-self:center;
             border-radius: 12vw;
+        }
+        #heading-carbones-button{
+            justify-self: center;
+            text-decoration:underline;
+            margin: .5vw 0;
         }
     }
     #carbonesHoverEffect:hover {

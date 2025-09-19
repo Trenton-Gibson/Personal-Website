@@ -72,7 +72,8 @@ display up to 1000 px.*/
             justify-content: right;
             #img-personal-finance-manager{
                 border-radius: 7vw;
-                width:25vw;
+                width:25.4vw;
+                height:25.4vw;
             }
             #financeHoverEffect{
                 position:absolute;
@@ -90,7 +91,8 @@ display up to 1000 px.*/
         .personalWebsite{
             #img-personal-website{
                 border-radius: 7vw;
-                width:25vw;
+                width:25.4vw;
+                height:25.4vw;
             }
             #personalWebsiteHoverEffect{
                 position:absolute;
@@ -411,7 +413,7 @@ display up to 1000 px.*/
     }
     .top-navbar-home-link{
         margin: 1vw;
-        color:white;
+        /* color:white; */
         font-size:3vw;
         align-self:center;
         a.top-navbar-home-link:hover{
@@ -448,9 +450,9 @@ display up to 1000 px.*/
         .about-container-image-circuts{
             display:block;
             #about-image-circuts{
-                width: 100%;
+                /* width: 100%;
                 height: 100%;
-                object-fit: fill;
+                object-fit: fill; */
             }   
             #photo_credit{
                 color: white;
@@ -575,7 +577,7 @@ display up to 1000 px.*/
         }
         .name{
             text-align:center;
-            color:white;
+            /* color:white; */
             font-size:7vw;
             background:rgb(45, 45, 45);
             border-radius:2vw;

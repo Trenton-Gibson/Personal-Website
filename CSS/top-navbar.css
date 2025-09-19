@@ -10,6 +10,7 @@
     background:rgb(45, 45, 45);
     .top-navbar-links-container{
         display:none;
+        color:white;
     }
     #purple-hamburger-bttn{
         display:none
@@ -61,7 +62,7 @@
 }
 .top-navbar-home-link{
     margin: 2vw;
-    color:white;
+    color:#7800B1FF;
     font-size:4.7vw;
     align-self:center;
     a.top-navbar-home-link:hover{
