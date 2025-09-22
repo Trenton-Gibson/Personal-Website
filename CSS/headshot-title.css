@@ -23,6 +23,8 @@
                 color: white;
                 background-color: rgb(45, 45, 45);
                 border-radius:4vw;
+                /* -webkit-text-stroke-width: .4vw; */
+                /* -webkit-text-stroke-color: black; */
             }
             #descriptor-analyst {
                 margin-left:0;
@@ -32,8 +34,8 @@
             #descriptor-designer {
                 width:28vw;
                 text-align:center;
-                color: rgb(45, 45, 45);
-                background-color: white;
+                color: white;
+                background-color: #7800B1FF;
             }
             #descriptor-programmer {
                 width: 35vw;
@@ -51,12 +53,14 @@
     }
     .name{
         text-align:center;
-        color:#7800B1FF;
+        color:white;
         font-size:7.5vw;
-        background:rgb(45, 45, 45);
+        background:#7800B1FF;
         border-radius:5vw;
         width:35vw;
         font-weight:bold;
+        /* -webkit-text-stroke-width: .04vw; */
+        /* -webkit-text-stroke-color: rgb(45, 45, 45); */
     }
     /*Styles for headshot*/
     .headshot-below-headers{

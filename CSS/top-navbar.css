@@ -55,7 +55,7 @@
 }
 .dropdown-links:hover{
     transition: 0.5s ease;
-    color:white;
+    color:#7800B1FF;
 }
 #dropdown-my-portfolio-link{
     margin-top:50vw;
@@ -67,6 +67,6 @@
     align-self:center;
     a.top-navbar-home-link:hover{
         transition: 0.5s ease;
-        color:#7800B1FF;
+        color:white;
     }
 }
