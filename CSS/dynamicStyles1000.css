@@ -57,10 +57,6 @@ display up to 1000 px.*/
         padding: 8vw 0;
         grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
         grid-gap:2vw;
-        width:100%;
-        /* background: white; */
-        background: center / contain no-repeat url(../Images/white_waves.jpg);
-        background-size: 100vw auto;
         #heading-my-portfolio{
             grid-column: auto / span 3;
             font-size:5vw;
@@ -77,15 +73,13 @@ display up to 1000 px.*/
             }
             #financeHoverEffect{
                 position:absolute;
-                width:25.6vw;
+                top: 2.5vw;
+                width:25.7vw;
                 height:25.6vw;
                 opacity:0;
                 transition: 0.5s ease;
                 justify-self:right;
                 border-radius: 7vw;
-            }
-            #financeHoverEffect:hover {
-                opacity:30%;
             }
         }
         .personalWebsite{
@@ -96,15 +90,13 @@ display up to 1000 px.*/
             }
             #personalWebsiteHoverEffect{
                 position:absolute;
-                width:25.4vw;
+                top: 2.5vw;
+                width:25.7vw;
                 height:25.6vw;
                 opacity:0;
                 transition: 0.5s ease;
                 justify-self:center;
                 border-radius: 7vw;
-            }
-            #personalWebsiteHoverEffect:hover {
-                opacity:30%;
             }
         }
         .carbonesMarketingSystem{
@@ -116,15 +108,13 @@ display up to 1000 px.*/
             }
             #carbonesHoverEffect{
                 position:absolute;
+                top: 2.5vw;
                 width:25.4vw;
                 height:25.4vw;
                 opacity:0;
                 transition: 0.5s ease;
                 justify-self:left;
                 border-radius: 7vw;
-            }
-            #carbonesHoverEffect:hover {
-                opacity:30%;
             }
         }
     }
@@ -371,10 +361,6 @@ display up to 1000 px.*/
                 font-size:2vw;
                 display:inline;
             }
-        a.top-navbar-links-container:hover {
-            transition: 0.5s ease;
-            color: #7800b1ff;
-        }
         #purple-hamburger-bttn{
             display:none
         }
@@ -413,9 +399,7 @@ display up to 1000 px.*/
     }
     .top-navbar-home-link{
         margin: 1vw;
-        /* color:white; */
         font-size:3vw;
-        align-self:center;
         a.top-navbar-home-link:hover{
             transition: 0.5s ease;
             color:white;
@@ -504,12 +488,6 @@ display up to 1000 px.*/
                 border-radius:6vw;
                 font-size:1vw;
                 border-width:.25vw;
-                transition: 0.5s ease;
-            }
-            #contact-button:hover{
-                background:white;
-                color:rgb(45, 45, 45);
-                border-color:rgb(45, 45, 45);
             }
             #name{
 
@@ -545,28 +523,17 @@ display up to 1000 px.*/
                 margin-left:4vw;
                 p.descriptors {
                     margin: 1.5vw 0;
-                    /* color: white; */
-                    background-color: rgb(45, 45, 45);
                     border-radius:4vw;
-                    /* -webkit-text-stroke-width: .05vw;
-                    -webkit-text-stroke-color: rgb(45, 45, 45); */
                 }
                 #descriptor-analyst {
                     margin-left:0;
                     width:30vw;
-                    text-align:center;
                 }
                 #descriptor-designer {
-                    /* margin-left:5vw; */
                     width:34vw;
-                    text-align:center;
-                    /* color: rgb(45, 45, 45); */
-                    /* background-color: white; */
                 }
                 #descriptor-programmer {
-                    /* margin-left:10vw; */
                     width: 44vw;
-                    text-align:center;
                 }
             }
         }
@@ -574,26 +541,13 @@ display up to 1000 px.*/
             height:16vw;
             padding-top:5vw;
             margin-left:4vw;
-            display:grid;
-            align-content:center;
         }
         .name{
-            text-align:center;
-            /* color:white; */
             font-size:7vw;
-            /* background:rgb(45, 45, 45); */
             border-radius:2vw;
             width:33vw;
-            font-weight:bold;
             margin-block-start: 0;
             margin-block-end: 0;
-            /* text-shadow:
-                .25vw .25vw 0 rgb(45, 45, 45),
-                -.25vw .25vw 0 rgb(45, 45, 45),
-                -.25vw -.25vw 0 rgb(45, 45, 45),
-                .25vw -.25vw 0 rgb(45, 45, 45); */
-            /* -webkit-text-stroke-width: .05vw;
-            -webkit-text-stroke-color: rgb(45, 45, 45); */
         }
         /*Styles for headshot*/
         .headshot-below-headers{

@@ -5,51 +5,89 @@ will display up to 750 px. The CSS
 for tablets turned horizontally will
 display up to 1000 px.*/
 @media only screen and (min-width: 551px) and (max-width:750px){
-    /*Styles for the bottom nav bar*/
-    #bottomNavBar{
-        padding:5vw 0;
-        .my-links-container{
-            #my-links-heading{
-                font-size:6vw;
-                margin-bottom:3vw;
-            }
-            a.my-links-container{
-                font-size:3.4vw;
-            }
-        }
-        .on-the-web-container{
-            h3.on-the-web-container{
-                font-size: 6.5vw;
-                padding-bottom:0;
-            }
-            #normal-linkedin-logo{
-                height:14vw;
-            }
-            #purple-linkedin-logo{
-                height:14vw;
-            }
-            #normal-github-logo{
-                height:14vw;
-            }
-            #purple-github-logo{
-                height:14vw;
-            }
-        }
-        .logo-container{
+    
+    /*Styles for the top navbar*/
+    .topNavBar{
+        overflow:hidden;
+        position: fixed;
+        width:100%;
+        z-index:4;
+        height:13vw;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+        background:rgb(45, 45, 45);
+        .top-navbar-links-container{
             display:grid;
-            grid-row:1;
-            grid-column:2;
+            grid-template-columns: repeat(auto-fit, minmax(16vw, 1fr));
+            align-items:center;
+            justify-content: center;
+            font-size:3vw;
+            text-align:center;
         }
-        img.logo-container{
-            align-self: center;
-            border-radius: 2vw;
-            height: 26vw;
-            width: 20vw;
+        #purple-hamburger-bttn{
+            display:none
+        }
+        .hamburger-bttn{
+            display:none;
         }
     }
+    .top-navbar-home-link{
+        margin: 2vw;
+        font-size:4.7vw;
+        align-self:center;
+    }
+    #contact-link{
+        padding-right:4vw;
+    }
+
+    /*Styles for the container holding the headshot and my titles*/
+    .headshot-title {
+    /*Styles for text next to my headshot*/
+    .self-description-headers {
+        .descriptors {
+            font-size:7.7vw;
+            p.descriptors {
+                margin: 4.9vw 0;
+            }
+            #descriptor-analyst {
+                width:29vw;
+            }
+            #descriptor-designer {
+                width:34vw;
+            }
+            #descriptor-programmer {
+                width:44vw;
+            }
+        }
+    }
+    .name-container{
+        height: 20vw;
+        padding-top: 16vw;
+        margin-left: 2vw;
+        display: grid;
+        align-content: center;
+    }
+    .name{
+        text-align: center;
+        color: white;
+        background: #7800B1FF;
+        border-radius: 5vw;
+        width: 40vw;
+        font-weight: bold;
+        font-size:9.5vw;
+    }
+    /*Styles for headshot*/
+    .headshot-below-headers{
+        #myHeadshot{
+            width:47vw;
+            }
+        }
+    }   
+
     /*Styles for the container containing my portfolio*/
     .myPortfolio{
-        grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(48vw, 1fr));
+        background-size: 100vw 128vw;
         #heading-my-portfolio{
             grid-column: auto / span 2;
             font-size:9vw;
@@ -67,7 +105,6 @@ display up to 1000 px.*/
                 width:48vw;
                 height:49.4vw;
                 opacity:0;
-                transition: 0.5s ease;
                 justify-self:center;
                 border-radius: 12vw;
             }
@@ -82,7 +119,6 @@ display up to 1000 px.*/
                 width:48vw;
                 height:49.4vw;
                 opacity:0;
-                transition: 0.5s ease;
                 justify-self:center;
                 border-radius: 12vw;
             }
@@ -98,7 +134,6 @@ display up to 1000 px.*/
                 width:48vw;
                 height:49.4vw;
                 opacity:0;
-                transition: 0.5s ease;
                 justify-self:center;
                 border-radius: 12vw;
             }
@@ -306,73 +341,6 @@ display up to 1000 px.*/
             }
         }
     }
-    /*Styles for the top navbar*/
-    .topNavBar{
-        overflow:hidden;
-        position: fixed;
-        width:100%;
-        z-index:4;
-        height:13vw;
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
-        background:rgb(45, 45, 45);
-        .top-navbar-links-container{
-            display:grid;
-            grid-template-columns: repeat(auto-fit, minmax(16vw, 1fr));
-            align-items:center;
-            justify-content: center;
-            font-size:3vw;
-            text-align:center;
-        }
-        #purple-hamburger-bttn{
-            display:none
-        }
-        .hamburger-bttn{
-            display:none;
-        }
-    }
-    .dropdown-menu{
-        overflow:visible;
-        position: fixed;
-        display:block;
-        width: 100%;
-        height:0%;
-        justify-content:center;
-        transition:height .5s ease-in-out;
-        z-index:3;
-    }
-    .dropdown-links-container{
-        display:grid;
-        height:0;
-    }
-    .dropdown-links{
-        margin-bottom:5vw;
-        padding: 0 5vw;
-        font-size: 0;
-        /*JavaScript lessens transition time when*/
-        /*closing dropdown menu*/
-        transition:font-size 1.2s ease-in-out;
-    }
-    .dropdown-links:hover{
-        transition: 0.5s ease;
-        color:white;
-    }
-    #dropdown-my-portfolio-link{
-        margin-top:50vw;
-    }
-    .top-navbar-home-link{
-        margin: 2vw;
-        color:white;
-        font-size:4.7vw;
-        align-self:center;
-        a.top-navbar-home-link:hover{
-            transition: 0.5s ease;
-            color:#7800B1FF;
-        }
-    }
-    #contact-link{
-        padding-right:4vw;
-    }
     /*Styles for the About container*/
     .about{
         #heading-about{
@@ -437,6 +405,42 @@ display up to 1000 px.*/
             #message{
 
             }
+        }
+    }
+
+     /*Styles for the bottom nav bar*/
+    #bottomNavBar{
+        padding:5vw 0;
+        .my-links-container{
+            #my-links-heading{
+                font-size:6vw;
+                margin-bottom:3vw;
+            }
+            a.my-links-container{
+                font-size:3.4vw;
+            }
+        }
+        .on-the-web-container{
+            h3.on-the-web-container{
+                font-size: 6.5vw;
+                padding-bottom:0;
+            }
+            #normal-linkedin-logo{
+                height:14vw;
+            }
+            #purple-linkedin-logo{
+                height:14vw;
+            }
+            #normal-github-logo{
+                height:14vw;
+            }
+            #purple-github-logo{
+                height:14vw;
+            }
+        }
+        .logo-container{
+        }
+        img.logo-container{
         }
     }
 }

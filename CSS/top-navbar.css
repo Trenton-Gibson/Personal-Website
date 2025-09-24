@@ -6,11 +6,15 @@
     z-index:4;
     height:13vw;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(47vw, 1fr));
     background:rgb(45, 45, 45);
     .top-navbar-links-container{
         display:none;
         color:white;
+    }
+    a.top-navbar-links-container:hover {
+        transition: 0.5s ease;
+        color: #7800b1ff;
     }
     #purple-hamburger-bttn{
         display:none
@@ -55,7 +59,7 @@
 }
 .dropdown-links:hover{
     transition: 0.5s ease;
-    color:#7800B1FF;
+    color:white
 }
 #dropdown-my-portfolio-link{
     margin-top:50vw;

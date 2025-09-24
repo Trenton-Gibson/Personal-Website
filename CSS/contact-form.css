@@ -41,7 +41,13 @@
             color:white;
             border-radius:6vw;
             font-size:3vw;
+            transition: 0.5s ease;
         }
+         #contact-button:hover{
+            background:white;
+            color:rgb(45, 45, 45);
+            border-color:rgb(45, 45, 45);
+         }
         #name{
 
         }

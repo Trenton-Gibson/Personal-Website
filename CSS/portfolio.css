@@ -1,13 +1,13 @@
 /*Styles for the container containing my portfolio*/
 .myPortfolio{
     display:grid;
-    width:100vw;
+    width: 100%;
     background: center / contain no-repeat url(../Images/white_waves.jpg);
     background-size: 100vw 100%;
     padding:8vw 0;
     position: relative;
     grid-gap:3vw 0;
-    grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(95vw, 1fr));
     #heading-my-portfolio{
         grid-column: auto / span 1;
         font-size:11vw;
@@ -28,7 +28,6 @@
         align-content: center;
         justify-content: center;
         #img-personal-finance-manager{
-            /* position:absolute; */
             justify-self:right;
             border-radius: 12vw;
             width:48vw;
@@ -41,19 +40,20 @@
             margin: .5vw 0;
         }
         #financeHoverEffect{
+            top: 5vw;
             position:absolute;
-            top:2.5vw;
             width:48vw;
-            height:49.4vw;
+            height:49vw;
             opacity:0;
             transition: 0.5s ease;
             justify-self:center;
             border-radius: 12vw;
         }
-    }
-    #financeHoverEffect:hover {
+        #financeHoverEffect:hover {
         opacity:30%;
+        }
     }
+    
     .personalWebsite{
         position:relative;
         display: grid;
@@ -62,18 +62,22 @@
         #img-personal-website{
             border-radius: 12vw;
             width:48vw;
+            height:48vw;
             border: solid;
             border-color: black;
         }
         #personalWebsiteHoverEffect{
+            top: 5vw;
             position:absolute;
-            top: 2.5vw;
             width:48vw;
-            height:49.4vw;
+            height:49vw;
             opacity:0;
             transition: 0.5s ease;
             justify-self:center;
             border-radius: 12vw;
+        }
+        #personalWebsiteHoverEffect:hover {
+                opacity:30%;
         }
         #heading-personal-website-button{
             justify-self: center;
@@ -81,9 +85,7 @@
             margin: .5vw 0;
         }
     }
-    #personalWebsiteHoverEffect:hover {
-        opacity:30%;
-    }
+
     .carbonesMarketingSystem{
         position:relative;
         display: grid;
@@ -99,23 +101,23 @@
             background: white;
         }
         #carbonesHoverEffect{
+            top: 5vw;
             position:absolute;
-            top: 2.5vw;
             width:48vw;
-            height:49.4vw;
+            height:49vw;
             opacity:0;
             transition: 0.5s ease;
             justify-self:center;
             border-radius: 12vw;
+        }
+        #carbonesHoverEffect:hover {
+        opacity:30%;
         }
         #heading-carbones-button{
             justify-self: center;
             text-decoration:underline;
             margin: .5vw 0;
         }
-    }
-    #carbonesHoverEffect:hover {
-        opacity:30%;
     }
 }
 
