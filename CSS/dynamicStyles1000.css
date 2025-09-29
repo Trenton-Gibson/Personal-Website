@@ -72,12 +72,8 @@ display up to 1000 px.*/
                 height:25.4vw;
             }
             #financeHoverEffect{
-                position:absolute;
-                top: 2.5vw;
                 width:25.7vw;
-                height:25.6vw;
-                opacity:0;
-                transition: 0.5s ease;
+                height:25.7vw;
                 justify-self:right;
                 border-radius: 7vw;
             }
@@ -89,12 +85,8 @@ display up to 1000 px.*/
                 height:25.4vw;
             }
             #personalWebsiteHoverEffect{
-                position:absolute;
-                top: 2.5vw;
                 width:25.7vw;
-                height:25.6vw;
-                opacity:0;
-                transition: 0.5s ease;
+                height:25.7vw;
                 justify-self:center;
                 border-radius: 7vw;
             }
@@ -103,16 +95,12 @@ display up to 1000 px.*/
             justify-content: left;
             #img-carbones-logo{
                 border-radius: 7vw;
-                height:25vw;
-                width:25vw;
+                height:25.4vw;
+                width:25.4vw;
             }
             #carbonesHoverEffect{
-                position:absolute;
-                top: 2.5vw;
-                width:25.4vw;
-                height:25.4vw;
-                opacity:0;
-                transition: 0.5s ease;
+                width:25.7vw;
+                height:25.7vw;
                 justify-self:left;
                 border-radius: 7vw;
             }
@@ -446,6 +434,9 @@ display up to 1000 px.*/
                 font-size: 1vw;
             }         
         }
+        #freepik-about{
+            font-size:1vw;
+        }
     }
     /*Styles for Contact container*/
     .contact{
@@ -567,6 +558,9 @@ display up to 1000 px.*/
                 border-right:none;
                 border-width:1vw;
             }
+        }
+        #freepik-headshot{
+            font-size:1vw;
         }
     }
 }

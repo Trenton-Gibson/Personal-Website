@@ -28,7 +28,7 @@
         align-content: center;
         justify-content: center;
         #img-personal-finance-manager{
-            justify-self:right;
+            justify-self:center;
             border-radius: 12vw;
             width:48vw;
             border: solid;
@@ -40,9 +40,9 @@
             margin: .5vw 0;
         }
         #financeHoverEffect{
-            top: 5vw;
+            bottom:0;
             position:absolute;
-            width:48vw;
+            width:49vw;
             height:49vw;
             opacity:0;
             transition: 0.5s ease;
@@ -64,12 +64,13 @@
             width:48vw;
             height:48vw;
             border: solid;
+            justify-self:center;
             border-color: black;
         }
         #personalWebsiteHoverEffect{
-            top: 5vw;
+            bottom:0;
             position:absolute;
-            width:48vw;
+            width:49vw;
             height:49vw;
             opacity:0;
             transition: 0.5s ease;
@@ -92,6 +93,7 @@
         align-content: center;
         justify-content: center;
         #img-carbones-logo{
+            justify-self: center;
             border-radius: 12vw;
             height:48vw;
             width:48vw;
@@ -101,9 +103,9 @@
             background: white;
         }
         #carbonesHoverEffect{
-            top: 5vw;
+            bottom:0;
             position:absolute;
-            width:48vw;
+            width:49vw;
             height:49vw;
             opacity:0;
             transition: 0.5s ease;

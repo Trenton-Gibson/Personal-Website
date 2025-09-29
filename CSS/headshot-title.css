@@ -75,4 +75,10 @@
             border-width:1vw;
         }
     }
+    #freepik-headshot{
+        padding-top:3vw;
+        color:white;
+        font-size: 2.5vw;
+        display: block;
+    }
 }

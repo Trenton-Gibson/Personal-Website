@@ -82,12 +82,15 @@ display up to 1000 px.*/
             width:47vw;
             }
         }
-    }   
+    #freepik-headshot{
+            font-size:2vw;
+        }
+}   
 
     /*Styles for the container containing my portfolio*/
     .myPortfolio{
         grid-template-columns: repeat(auto-fit, minmax(48vw, 1fr));
-        background-size: 100vw 128vw;
+        background-size: 100vw 100%;
         #heading-my-portfolio{
             grid-column: auto / span 2;
             font-size:9vw;
@@ -101,26 +104,19 @@ display up to 1000 px.*/
                 width:42vw;
             }
             #financeHoverEffect{
-                position:absolute;
-                width:48vw;
-                height:49.4vw;
-                opacity:0;
-                justify-self:center;
-                border-radius: 12vw;
+                width:42vw;
+                height:43vw;
             }
         }
         .personalWebsite{
             #img-personal-website{
                 border-radius: 12vw;
+                height: 42vw;
                 width:42vw;
             }
             #personalWebsiteHoverEffect{
-                position:absolute;
-                width:48vw;
-                height:49.4vw;
-                opacity:0;
-                justify-self:center;
-                border-radius: 12vw;
+                width:42vw;
+                height:43vw;
             }
         }
         .carbonesMarketingSystem{
@@ -130,12 +126,8 @@ display up to 1000 px.*/
                 width:42vw;
             }
             #carbonesHoverEffect{
-                position:absolute;
-                width:48vw;
-                height:49.4vw;
-                opacity:0;
-                justify-self:center;
-                border-radius: 12vw;
+                width:42vw;
+                height:43vw;
             }
         }
     }
@@ -351,6 +343,9 @@ display up to 1000 px.*/
             padding-top:7vw;
             margin:0 16vw;
             font-size:3.4vw;
+        }
+        #freepik-about{
+            font-size:2vw;
         }
     }
     /*Styles for Contact container*/

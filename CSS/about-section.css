@@ -35,4 +35,10 @@
         justify-self: center;
         margin: 1vw 0;
     }
+    #freepik-about{
+        padding-top: 3vw;
+        color:white;
+        font-size: 3vw;
+        display: block;
+    }
 }

@@ -58,14 +58,10 @@ display up to 1000 px.*/
                 height: 30vw;
             }
             #financeHoverEffect{
-                position:absolute;
-                top: 3.9vw;
                 width:30.5vw;
-                height: 30vw;
-                opacity:0;
-                transition: 0.5s ease;
+                height: 30.4vw;
                 justify-self:right;
-                border-radius: 12vw;
+                border-radius: 7vw;
             }
         }
         .personalWebsite{
@@ -76,14 +72,10 @@ display up to 1000 px.*/
                 height: 30vw;
             }
             #personalWebsiteHoverEffect{
-                position:absolute;
-                top: 3.9vw;
                 width:30.5vw;
-                height: 30vw;
-                opacity:0;
-                transition: 0.5s ease;
+                height: 30.4vw;
                 justify-self:left;
-                border-radius: 12vw;
+                border-radius: 7vw;
             }
         }
         .carbonesMarketingSystem{
@@ -94,14 +86,10 @@ display up to 1000 px.*/
                 width:30vw;
             }
             #carbonesHoverEffect{
-                position:absolute;
-                top: 3.9vw;
                 width:30.5vw;
-                height: 30vw;;
-                opacity:0;
-                transition: 0.5s ease;
+                height: 30.4vw;
                 justify-self:right;
-                border-radius: 12vw;
+                border-radius: 7vw;
             }
         }
     }
@@ -410,6 +398,10 @@ display up to 1000 px.*/
                 font-size: 2vw;
             }          
         }
+        #freepik-about{
+            padding-top: 2vw;
+            font-size: 2vw;
+        }
     }
     /*Styles for Contact container*/
     .contact{
@@ -499,6 +491,9 @@ display up to 1000 px.*/
                     width: 40vw;
                     text-align:center;
                 }
+            }
+            #freepik-headshot{
+                font-size: 2vw;
             }
         }
         .name-container{
