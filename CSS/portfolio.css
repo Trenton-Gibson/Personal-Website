@@ -35,9 +35,11 @@
             border-color: black;
         }
         #heading-finance-manager-button{
+            color:rgb(45,45,45);
             justify-self: center;
             text-decoration:underline;
             margin: .5vw 0;
+            font-size:3.5vw;
         }
         #financeHoverEffect{
             bottom:0;
@@ -51,6 +53,13 @@
         }
         #financeHoverEffect:hover {
         opacity:30%;
+        }
+        #unsplash{
+            position: absolute;
+            bottom: 1.25vw;
+            justify-self: center;
+            font-size: 2.25vw;
+            color: rgb(45,45,45);
         }
     }
     
@@ -81,9 +90,18 @@
                 opacity:30%;
         }
         #heading-personal-website-button{
+            color:rgb(45,45,45);
             justify-self: center;
             text-decoration:underline;
             margin: .5vw 0;
+            font-size:3.5vw;
+        }
+        #freepik-web{
+            position: absolute;
+            bottom: 1.25vw;
+            justify-self: center;
+            font-size: 2.25vw;
+            color: rgb(45,45,45);
         }
     }
 
@@ -116,9 +134,11 @@
         opacity:30%;
         }
         #heading-carbones-button{
+            color:rgb(45,45,45);
             justify-self: center;
             text-decoration:underline;
             margin: .5vw 0;
+            font-size:3.5vw;
         }
     }
 }

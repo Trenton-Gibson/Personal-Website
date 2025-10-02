@@ -77,6 +77,14 @@ display up to 1000 px.*/
                 justify-self:right;
                 border-radius: 7vw;
             }
+            #unsplash{
+                bottom: 1vw;
+                font-size: 1vw;
+                left: 47%;
+            }
+            #heading-finance-manager-button{
+                font-size:1.5vw;
+            }
         }
         .personalWebsite{
             #img-personal-website{
@@ -89,6 +97,13 @@ display up to 1000 px.*/
                 height:25.7vw;
                 justify-self:center;
                 border-radius: 7vw;
+            }
+            #freepik-web{
+                bottom: 1vw;
+                font-size: 1vw;
+            }
+            #heading-personal-website-button{
+                font-size:1.5vw;
             }
         }
         .carbonesMarketingSystem{
@@ -103,6 +118,9 @@ display up to 1000 px.*/
                 height:25.7vw;
                 justify-self:left;
                 border-radius: 7vw;
+            }
+            #heading-carbones-button{
+                font-size:1.5vw;
             }
         }
     }
@@ -435,7 +453,9 @@ display up to 1000 px.*/
             }         
         }
         #freepik-about{
-            font-size:1vw;
+            font-size: .75vw;
+            padding-bottom: 1vw;
+            padding-top:1vw;
         }
     }
     /*Styles for Contact container*/
@@ -560,7 +580,8 @@ display up to 1000 px.*/
             }
         }
         #freepik-headshot{
-            font-size:1vw;
+            font-size:.75vw;
+            padding-top:.5vw
         }
     }
 }

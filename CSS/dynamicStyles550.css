@@ -83,7 +83,8 @@ display up to 1000 px.*/
             }
         }
     #freepik-headshot{
-            font-size:2vw;
+            font-size:1.5vw;
+            padding-top:2vw;
         }
 }   
 
@@ -107,6 +108,12 @@ display up to 1000 px.*/
                 width:42vw;
                 height:43vw;
             }
+            #unsplash{
+                font-size: 1.5vw;
+            }
+            #heading-finance-manager-button{
+                font-size:2.5vw;
+             }
         }
         .personalWebsite{
             #img-personal-website{
@@ -118,6 +125,12 @@ display up to 1000 px.*/
                 width:42vw;
                 height:43vw;
             }
+            #freepik-web{
+                font-size: 1.5vw;
+            }
+            #heading-personal-website-button{
+                font-size:2.5vw;
+             }
         }
         .carbonesMarketingSystem{
             #img-carbones-logo{
@@ -129,6 +142,9 @@ display up to 1000 px.*/
                 width:42vw;
                 height:43vw;
             }
+             #heading-carbones-button{
+                font-size:2.5vw;
+             }
         }
     }
     /*Styles for the Personal Finance Manager Popup*/
@@ -345,7 +361,8 @@ display up to 1000 px.*/
             font-size:3.4vw;
         }
         #freepik-about{
-            font-size:2vw;
+            font-size:1.5vw;
+            padding-top:3vw;
         }
     }
     /*Styles for Contact container*/

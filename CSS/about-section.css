@@ -13,7 +13,7 @@
         border-radius:11vw;
     }
     .about-container-text{
-        padding:7vw 0;
+        padding:4vw 0;
     }
     #about-text{
         color:white;
@@ -36,9 +36,9 @@
         margin: 1vw 0;
     }
     #freepik-about{
-        padding-top: 3vw;
+        padding-top: 7vw;
         color:white;
-        font-size: 3vw;
+        font-size: 2vw;
         display: block;
     }
 }
